@@ -1,3 +1,8 @@
+## Info
+ React, NextJs Typescript Portfolio Website with real contact email with the help of Resend email API and react-email templates .
+
+
+
 ## Setup
 
 1. Add RESEND_API_KEY environment variable in .env.local
