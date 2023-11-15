@@ -85,6 +85,14 @@ export const projectsData = [
 
 export const educationData = [
   {
+    title: "Bachelor Degree",
+    location: "Lycée Bach Hamba, Bizerte",
+    description:
+      "I graduated with a bachlor degree in computer science.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2017",
+  },
+  {
     title: "Computer Science Degree",
     location: "Carthage University, ISSAT Mateur",
     description:
@@ -96,11 +104,10 @@ export const educationData = [
     title: "Software Engineering Degree",
     location: "Polytech Intl, Rue du Lac d'Annecy Tunis",
     description:
-      "Currently studying for a software engineering degree, freelancing, and working on side projects to enhance skills.",
+      "Currently studying for a software engineering degree, while working on side projects to enhance my skills.",
     icon: React.createElement(PiStudent),
     date: "2021 - Present",
   },
-  // Add more education entries as needed
 ] as const;
 
 

@@ -53,16 +53,20 @@
           "hash": "#about"
         },
         {
-          "name": "Projects",
-          "hash": "#projects"
+          "name": "Education",
+          "hash": "#education"
+        },
+        {
+          "name": "Experience",
+          "hash": "#experience"
         },
         {
           "name": "Skills",
           "hash": "#skills"
         },
         {
-          "name": "Experience",
-          "hash": "#experience"
+          "name": "Projects",
+          "hash": "#projects"
         },
         {
           "name": "Contact",

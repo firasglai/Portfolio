@@ -56,16 +56,21 @@
         "hash": "#about"
       },
       {
-        "name": "Projets",
-        "hash": "#projects"
+        "name": "Education",
+        "hash": "#education"
+      },
+     
+      {
+        "name": "Expérience",
+        "hash": "#experience"
       },
       {
         "name": "Compétences",
         "hash": "#skills"
       },
       {
-        "name": "Expérience",
-        "hash": "#experience"
+        "name": "Projets",
+        "hash": "#projects"
       },
       {
         "name": "Contact",
