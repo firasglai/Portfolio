@@ -2,7 +2,7 @@
     "intro": {
         "greeting": "Hello, I'm Firas.",
         "desc1": "I'm a lifelong learner and a passionate",
-        "desc2": "full-stack developer,",
+        "desc2": "Software enginnering student,",
         "desc3":"specializing in building",
         "desc4":"seamless digital experiences,",
         "desc5":"eager to take on new challenges that align with my career ambitions, Let's build something amazing together!",
@@ -21,28 +21,96 @@
         "par6":"I am also familiar with TypeScript with React and NextJS . I am always looking to learn new technologies. I am currently looking for a full-time position as a softwar developer. ",
         "end":"when i'm not coding I enjoy playing video games, camping, and traveling. I also enjoy learning new things I am currently learning about history and philosophy , i'm also learning how to play chess "
       }, 
-      "Projects": {
-        "main":"My Projects ",
-          "first":{
-            "title":"CorpComment",
-            "description":"I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-            "tags": ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"]
-          },
-          "second":{
-            "title":"rmtDev",
-            "description":"Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-            "tags":["React", "TypeScript", "Next.js", "Tailwind", "Redux"]
-          },
-          "third":{
-            "title":"Word Analytics",
-            "description":"A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-            "tags":["React", "Next.js", "SQL", "Tailwind", "Framer"]
-          }
-        },
 
-    "Skills": {
-      "title":"My skills"
+
+      "education": {
+        "main": "My Education",
+        "items": [
+          {
+            "title": "Bachelor Degree",
+            "location": "Bach Hamba college , Bizerte",
+            "description": "I graduated with a bachlor degree in computer science.",
+            "date": "2017",
+            "icon": "LuGraduationCap"
+          },
+          {
+            "title": "Computer Science Degree",
+            "location": "Carthage University, ISSAT Mateur",
+            "description": "I graduated after 3 years of studying. Then, I tried freelancing for a year.",
+            "date": "2020",
+            "icon": "PiCertificateBold"
+          },
+          {
+            "title": "Software Engineering Degree",
+            "location": "Polytech Intl, Rue du Lac d'Annecy Tunis",
+            "description": "Currently studying for a software engineering degree, while working on side projects to enhance skills.",
+            "date": "2021 - Present",
+            "icon": "PiStudent"
+          }
+        ]
+      },
+      "experience": {
+        "main": "My Experience",
+        "items": [
+          {
+            "title": "End of Year Internship",
+            "location": "BFI Groupe, Lac Tunis",
+            "description": "I worked on a digital marketing platform for 6 months with Angular, Spring Boot, and Power BI. From there, I upskilled to full stack.",
+            "date": "01/01/2020 - 30/06/2020",
+            "icon": "CgWorkAlt"
+          },
+          {
+            "title": "Engineering Internship",
+            "location": "Digit-R, Centre urbain nord Tunis",
+            "description": "The design and implementation of an Appointment Management System, responsible for the full-stack development of the application. I continued after the internship to work on different tasks as a freelancer.",
+            "date": "01/08/2023 - 01/10/2023",
+            "icon": "CgWorkAlt"
+          }
+        ]
+      },
+
+
+      "projects": {
+        "main": "My Projects",
+        "items": [
+          {
+            "title": "CorpComment",
+            "description": "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+            "tags": ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+            "imageUrl": "corpcommentImg",
+            "imageAlt": "CorpComment Image"
+          },
+          {
+            "title": "rmtDev",
+            "description": "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+            "tags": ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+            "imageUrl": "rmtdevImg",
+            "imageAlt": "CorpComment Image"
+          },
+          {
+            "title": "Word Analytics",
+            "description": "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+            "tags": ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+            "imageUrl": "corpcommentImg",
+            "imageAlt": "CorpComment Image"
+          }
+        ]
+      },
+
+    "skills": {
+      "main":"My skills"
     },
+
+    "contact":{
+      "main":"Contact me",
+      "direct":"Please contact me directly at",
+      "sendto":"glaifiras44@gmail.com",
+      "or": "or through this form.",
+      "email_placeholder":"Your email",
+      "message_placeholder":"Your message",
+      "submit":"submit"
+      },
+
       "links": [
         {
           "name": "Home",
@@ -73,6 +141,8 @@
           "hash": "#contact"
         }
       ]
+
+      
     }
   
   

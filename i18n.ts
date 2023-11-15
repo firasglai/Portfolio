@@ -5,7 +5,7 @@ import fr from './public/locales/fr.json';
 
 
 i18n.use(initReactI18next).init({
-  debug: true,
+  debug: false,
   resources: {
     en: { translation: en },
     fr: { translation: fr },

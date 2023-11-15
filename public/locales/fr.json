@@ -1,8 +1,8 @@
 {
     "intro": {
       "greeting": "Bonjour, je m'appelle Firas.",
-      "desc1": "Je suis un apprenant passionné et un développeur",
-      "desc2": "full-stack,",
+      "desc1": "Je suis un apprenant passionné",
+      "desc2": "etudiant en génie logiciel",
       "desc3": "spécialisé dans la construction",
       "desc4": "d'expériences numériques fluides,",
       "desc5": "désireux de relever de nouveaux défis qui correspondent à mes ambitions professionnelles. Construisons quelque chose d'extraordinaire ensemble !",
@@ -21,29 +21,94 @@
       "par6": "Je suis également familier avec TypeScript avec React et NextJS. Je suis toujours prêt à apprendre de nouvelles technologies. Je recherche actuellement un poste de développeur logiciel à temps plein.",
       "end": "Quand je ne code pas, j'aime jouer à des jeux vidéo, faire du camping et voyager. J'aime aussi apprendre de nouvelles choses. En ce moment, je me documente sur l'histoire et la philosophie. J'apprends également à jouer aux échecs."
     },
+    "education": {
+      "main": "Mon éducation",
+      "items": [
+        {
+          "title": "Licence en informatique",
+          "location": "Collège Bach Hamba, Bizerte",
+          "description": "J'ai obtenu ma licence en informatique.",
+          "date": "2017",
+          "icon": "LuGraduationCap"
+        },
+        {
+          "title": "Diplôme en informatique",
+          "location": "Université de Carthage, ISSAT Mateur",
+          "description": "J'ai obtenu mon diplôme après 3 ans d'études. Ensuite, j'ai travaillé en freelance pendant un an.",
+          "date": "2020",
+          "icon": "PiCertificateBold"
+        },
+        {
+          "title": "Diplôme en génie logiciel",
+          "location": "Polytech Intl, Rue du Lac d'Annecy Tunis",
+          "description": "Actuellement en cours d'obtention d'un diplôme d'ingénieurie en génie logiciel, en travaillant sur des projets annexes pour améliorer mes compétences.",
+          "date": "2021 - Présent",
+          "icon": "PiStudent"
+        }
+      ]
+    },
+    
+    "experience": {
+      "main": "Mon Expérience",
+      "items": [
+        {
+          "title": "Stage de fin d'année",
+          "location": "BFI Groupe, Lac Tunis",
+          "description": "J'ai travaillé sur une plateforme de marketing numérique pendant 6 mois avec Angular, Spring Boot et Power BI. À partir de là, j'ai développé mes compétences en full stack.",
+          "date": "01/01/2020 - 30/06/2020",
+          "icon": "CgWorkAlt"
+        },
+        {
+          "title": "Stage d'ingénieur",
+          "location": "Digit-R, Centre urbain nord Tunis",
+          "description": "Conception et mise en œuvre d'un système de gestion de rendez-vous, responsable du développement full-stack de l'application. J'ai continué après le stage à travailler sur différentes tâches en tant que freelance.",
+          "date": "01/08/2023 - 01/10/2023",
+          "icon": "CgWorkAlt"
+        }
+      ]
+    },
+ 
 
-    "Projects": {
-    "main": "Mes Projets",
-    "first": {
-      "title": "CorpComment",
-      "description": "J'ai travaillé en tant que développeur full-stack sur ce projet de start-up pendant 2 ans. Les utilisateurs peuvent donner des commentaires publics aux entreprises.",
-      "tags": ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"]
+    "projects": {
+      "main": "Mes Projets",
+      "items": [
+        {
+          "title": "CorpComment",
+          "description": "J'ai travaillé en tant que développeur full-stack sur ce projet de start-up pendant 2 ans. Les utilisateurs peuvent donner des commentaires publics aux entreprises.",
+          "tags": ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+          "imageUrl": "corpcommentImg",
+          "imageAlt": "CorpComment Image"
+        },
+        {
+          "title": "rmtDev",
+          "description": "Tableau d'emplois pour les emplois de développeurs à distance. J'étais le développeur front-end. Il dispose de fonctionnalités telles que le filtrage, le tri et la pagination.",
+          "tags": ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+          "imageUrl": "rmtdevImg",
+          "imageAlt": "DeV Image"
+        },
+        {
+          "title": "Word Analytics",
+          "description": "Une application web publique pour des analyses rapides sur du texte. Elle affiche le nombre de mots, le nombre de caractères et les limites de publication sur les médias sociaux.",
+          "tags": ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+          "imageUrl": "wordanalyticsImg",
+            "imageAlt": "wordanalytics Image"
+        }
+      ]
     },
-    "second": {
-      "title": "rmtDev",
-      "description": "Tableau d'emplois pour les emplois de développeurs à distance. J'étais le développeur front-end. Il dispose de fonctionnalités telles que le filtrage, le tri et la pagination.",
-      "tags": ["React", "TypeScript", "Next.js", "Tailwind", "Redux"]
-    },
-    "third": {
-      "title": "Word Analytics",
-      "description": "Une application web publique pour des analyses rapides sur du texte. Elle affiche le nombre de mots, le nombre de caractères et les limites de publication sur les médias sociaux.",
-      "tags": ["React", "Next.js", "SQL", "Tailwind", "Framer"]
-    }
-  },
 
-    "Skills": {
-      "title":"Mes Compétences"
+    "skills": {
+      "main":"Mes Compétences"
     },
+
+    "contact":{
+      "main":"Contactez moi",
+      "direct":"Merci de me contacter directement au",
+      "sendto":"glaifiras44@gmail.com",
+      "or": "ou via ce formulaire.",
+      "email_placeholder":"Votre email",
+      "message_placeholder":"Votre message",
+      "submit":"soumettre"
+      },
 
     
     "links": [

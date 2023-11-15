@@ -9,19 +9,49 @@ import {PiStudent,PiCertificateBold} from "react-icons/pi";
 import {BsBook} from "react-icons/bs";
 import enlinks from "@/public/locales/en.json";
 import frlinks from "@/public/locales/fr.json";
+import * as LuIcons from 'react-icons/lu';
+import * as PiIcons from 'react-icons/pi';
+import * as CgIcons from'react-icons/cg';
 
+// Map Icons from JSON files 
+export const iconMapping = {
+  LuGraduationCap: LuIcons.LuGraduationCap,
+  PiCertificateBold: PiIcons.PiCertificateBold,
+  PiStudent: PiIcons.PiStudent,
+  CgWorkAlt: CgIcons.CgWorkAlt,
+};
+export const imageMapping = {
+  corpcommentImg: require("@/public/corpcomment.png"),
+  rmtdevImg: require("@/public/rmtdev.png"),
+  wordanalyticsImg: require("@/public/wordanalytics.png"),
+  // Add other images here
+} as const;
 
-
-//  helper function to get the translated links
+//  helper functions to map through the translated objects
 export const TranslatedLinks = (currentLanguage: string) => {
   // Use the current language to determine which translation to use
   const translatedLinks = currentLanguage === 'fr' ? frlinks : enlinks;
-
   return translatedLinks.links.map((link) => ({
     ...link,
-    name: link.name, // Assuming that the structure in the translation files remains the same
+    name: link.name, 
   }));
 };
+export const TranslatedEducation = (currentLanguage: string) => {
+  const translatedEducation = currentLanguage === 'fr' ? frlinks.education : enlinks.education;
+  return translatedEducation;
+};
+
+export const TranslatedExperience = (currentLanguage: string) => {
+const translatedExpericence = currentLanguage === 'fr' ? frlinks.experience : enlinks.experience;
+return translatedExpericence;
+}
+
+export const TranslatedProjects = (currentLanguage: string) => {
+  const translatedProjects = currentLanguage === 'fr' ? frlinks.projects : enlinks.projects;
+  return translatedProjects;
+};
+
+
 export const experiencesData = [
   
   {
@@ -33,26 +63,10 @@ export const experiencesData = [
     date: "01/01/2020 - 30/06/2020",
   },
   {
-    title: "Computer science degree",
-    location: "Carthage University , ISSAT Mateur",
-    description:
-      "I graduated after 3 years of studying. and then i tried freelancing for a year . ",
-    icon: React.createElement(PiCertificateBold),
-    date: "2020",
-  },
-  {
-    title: "Software engineer",
-    location: "Polytech intl, rue du lac d'Annecy Tunis",
-    description:
-      "I'm now studying for a software engineering degree, while also continuing to freelance and working on some side projects to keep on enhancing my skills and learning new technologies .",
-    icon: React.createElement(PiStudent),
-    date: "2021 - present",
-  },
-  {
     title: "Internship",
     location: "Digit-R, Centre urbain nord Tunis",
     description:
-      "The design and implementation of an Appointment managemment system, responsible for the fullstack development of the application, i continued after the internship to work on tasks as a freelancer.",
+      "The design and implementation of an Appointment managemment system, responsible for the fullstack development of the application, i continued after the internship to work on different tasks as a freelancer.",
     icon: React.createElement(CgWorkAlt),
     date: "01/08/2023 - 01/10/2023",
   },
@@ -82,11 +96,11 @@ export const projectsData = [
   },
 ] as const;
 
-
+//should change it in Translation File under @locales
 export const educationData = [
   {
     title: "Bachelor Degree",
-    location: "Lycée Bach Hamba, Bizerte",
+    location: "Bach Hamba college , Bizerte",
     description:
       "I graduated with a bachlor degree in computer science.",
     icon: React.createElement(LuGraduationCap),
