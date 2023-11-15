@@ -10,8 +10,11 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import profileImg from "@/public/main.jpg";
+import { useTranslation } from 'react-i18next';
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { t, i18n } = useTranslation();;
+  const currentLanguage = i18n.language;
+  const { ref } = useSectionInView( currentLanguage === 'fr' ? 'Acceuil' : 'Home', 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
@@ -62,11 +65,9 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Firas.</span> I'm a lifelong learner and a passionate {" "}
-        <span className="font-bold">full-stack developer ,</span> specializing in building {"   "}
-        <span className="italic">seamless digital experiences {" "} , </span> eager to take on new challenges that align with my career ambitions,
-        Let's build something amazing together!{" "} 
-       
+        <span className="font-bold">{t('intro.greeting')}</span> {t('intro.desc1')} {" "}
+        <span className="font-bold">{t('intro.desc2')}</span> 
+        {t('intro.desc5')}{" "} 
       </motion.h1>
 
       <motion.div
@@ -85,7 +86,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
+          {t('intro.contactMe')}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
@@ -94,7 +95,7 @@ export default function Intro() {
           href="/CV.pdf"
           download
         >
-          Download CV{" "}
+         {t('intro.downloadCV')}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 

@@ -6,35 +6,22 @@ import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import {PiStudent,PiCertificateBold} from "react-icons/pi";
-import {BsBook} from "react-icons/bs"
+import {BsBook} from "react-icons/bs";
+import enlinks from "@/public/locales/en.json";
+import frlinks from "@/public/locales/fr.json";
 
-export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
-  {
-    name: "About",
-    hash: "#about",
-  },
-  {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
-] as const;
 
+
+//  helper function to get the translated links
+export const TranslatedLinks = (currentLanguage: string) => {
+  // Use the current language to determine which translation to use
+  const translatedLinks = currentLanguage === 'fr' ? frlinks : enlinks;
+
+  return translatedLinks.links.map((link) => ({
+    ...link,
+    name: link.name, // Assuming that the structure in the translation files remains the same
+  }));
+};
 export const experiencesData = [
   
   {
@@ -94,6 +81,28 @@ export const projectsData = [
     imageUrl: wordanalyticsImg,
   },
 ] as const;
+
+
+export const educationData = [
+  {
+    title: "Computer Science Degree",
+    location: "Carthage University, ISSAT Mateur",
+    description:
+      "I graduated after 3 years of studying. Then, I tried freelancing for a year.",
+    icon: React.createElement(PiCertificateBold),
+    date: "2020",
+  },
+  {
+    title: "Software Engineering Degree",
+    location: "Polytech Intl, Rue du Lac d'Annecy Tunis",
+    description:
+      "Currently studying for a software engineering degree, freelancing, and working on side projects to enhance skills.",
+    icon: React.createElement(PiStudent),
+    date: "2021 - Present",
+  },
+  // Add more education entries as needed
+] as const;
+
 
 export const skillsData = [
   "HTML",

@@ -1,5 +1,5 @@
 ## Info
- React, NextJs Typescript Portfolio Website with real contact email with the help of Resend email API and react-email templates .
+ React, NextJs Typescript Portfolio Website with real contact email with the help of Resend email API and react-email/tailwind templates .
 
 
 

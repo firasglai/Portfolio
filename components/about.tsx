@@ -4,9 +4,12 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import { useTranslation } from 'react-i18next';
 
 export default function About() {
-  const { ref } = useSectionInView("About");
+  const { t , i18n} = useTranslation();
+  const currentLanguage = i18n.language;
+  const { ref } = useSectionInView(currentLanguage === 'fr' ? 'propos' : 'About',);
 
   return (
     <motion.section
@@ -17,32 +20,22 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
+      <SectionHeading> {t('About.title')}</SectionHeading>
       <p className="mb-3">
-        After graduating with a  {" "}
-        <span className="font-medium">computer systems and software degree</span>, I decided to pursue my
-        passion for programming. I enrolled in software enginnering and continued to learn{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
+       {t('About.begin')}  {" "}
+        <span className="font-medium">{t('About.par1')} </span> {t('About.par2')} {" "}
+        <span className="font-medium">{t('About.par3')} </span>.{" "}
+        <span className="italic">{t('About.par4')} </span>
+        <span className="italic">{t('About.par5')} </span>
+        {" "}
         <span className="font-medium">
-          Angular, SpringBoot, Node.js, MySQL and MongoDB
+          Angular, SpringBoot, Node.js, MySQL and MongoDB,
         </span>
-        . I am also familiar with TypeScript with React and NextJS . I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        {" "}  {t('About.par6')} 
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, camping, and traveling. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play chess let's play on chess.com! : <span className="underline">firasgl</span>.
+      {t('About.end')} 
       </p>
     </motion.section>
   );

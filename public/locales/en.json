@@ -1,0 +1,74 @@
+{
+    "intro": {
+        "greeting": "Hello, I'm Firas.",
+        "desc1": "I'm a lifelong learner and a passionate",
+        "desc2": "full-stack developer,",
+        "desc3":"specializing in building",
+        "desc4":"seamless digital experiences,",
+        "desc5":"eager to take on new challenges that align with my career ambitions, Let's build something amazing together!",
+        "downloadCV": "Download CV",
+        "contactMe": "Contact Me Here"
+      },
+
+      "About":{
+        "title":"About me",
+        "begin":"After graduating with a",
+        "par1":"computer systems and software degree, ",
+        "par2":"I decided to pursue my passion for programming. I enrolled in software enginnering and continued to learn ",
+        "par3":"full-stack web development",
+        "par4":"My favorite part of programming is the problem-solving aspect. ",
+        "par5":"I love the feeling of finally figuring out a solution to a problem.My core stack is ",
+        "par6":"I am also familiar with TypeScript with React and NextJS . I am always looking to learn new technologies. I am currently looking for a full-time position as a softwar developer. ",
+        "end":"when i'm not coding I enjoy playing video games, camping, and traveling. I also enjoy learning new things I am currently learning about history and philosophy , i'm also learning how to play chess "
+      }, 
+      "Projects": {
+        "main":"My Projects ",
+          "first":{
+            "title":"CorpComment",
+            "description":"I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+            "tags": ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"]
+          },
+          "second":{
+            "title":"rmtDev",
+            "description":"Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+            "tags":["React", "TypeScript", "Next.js", "Tailwind", "Redux"]
+          },
+          "third":{
+            "title":"Word Analytics",
+            "description":"A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+            "tags":["React", "Next.js", "SQL", "Tailwind", "Framer"]
+          }
+        },
+
+    "Skills": {
+      "title":"My skills"
+    },
+      "links": [
+        {
+          "name": "Home",
+          "hash": "#home"
+        },
+        {
+          "name": "About",
+          "hash": "#about"
+        },
+        {
+          "name": "Projects",
+          "hash": "#projects"
+        },
+        {
+          "name": "Skills",
+          "hash": "#skills"
+        },
+        {
+          "name": "Experience",
+          "hash": "#experience"
+        },
+        {
+          "name": "Contact",
+          "hash": "#contact"
+        }
+      ]
+    }
+  
+  

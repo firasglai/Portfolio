@@ -1,3 +1,3 @@
-import { links } from "./data";
 
-export type SectionName = (typeof links)[number]["name"];
+import { TranslatedLinks } from "./data";
+export type SectionName = ReturnType<typeof TranslatedLinks>[number]['name'];

@@ -1,0 +1,76 @@
+{
+    "intro": {
+      "greeting": "Bonjour, je m'appelle Firas.",
+      "desc1": "Je suis un apprenant passionné et un développeur",
+      "desc2": "full-stack,",
+      "desc3": "spécialisé dans la construction",
+      "desc4": "d'expériences numériques fluides,",
+      "desc5": "désireux de relever de nouveaux défis qui correspondent à mes ambitions professionnelles. Construisons quelque chose d'extraordinaire ensemble !",
+      "downloadCV": "Télécharger le CV",
+      "contactMe": "Contactez-moi ici"
+    },
+  
+    "About": {
+      "title":"À propos de moi",
+      "begin": "Après avoir obtenu un diplôme en",
+      "par1": "systèmes informatiques et logiciels,",
+      "par2": "j'ai décidé de poursuivre ma passion pour la programmation. J'ai suivi des études en ingénierie logicielle et j'ai continué à apprendre",
+      "par3": "le développement web full-stack.",
+      "par4": "Ma partie préférée de la programmation est l'aspect résolution de problèmes.",
+      "par5": "J'adore la sensation de finalement trouver une solution à un problème. Ma pile technologique de base est",
+      "par6": "Je suis également familier avec TypeScript avec React et NextJS. Je suis toujours prêt à apprendre de nouvelles technologies. Je recherche actuellement un poste de développeur logiciel à temps plein.",
+      "end": "Quand je ne code pas, j'aime jouer à des jeux vidéo, faire du camping et voyager. J'aime aussi apprendre de nouvelles choses. En ce moment, je me documente sur l'histoire et la philosophie. J'apprends également à jouer aux échecs."
+    },
+
+    "Projects": {
+    "main": "Mes Projets",
+    "first": {
+      "title": "CorpComment",
+      "description": "J'ai travaillé en tant que développeur full-stack sur ce projet de start-up pendant 2 ans. Les utilisateurs peuvent donner des commentaires publics aux entreprises.",
+      "tags": ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"]
+    },
+    "second": {
+      "title": "rmtDev",
+      "description": "Tableau d'emplois pour les emplois de développeurs à distance. J'étais le développeur front-end. Il dispose de fonctionnalités telles que le filtrage, le tri et la pagination.",
+      "tags": ["React", "TypeScript", "Next.js", "Tailwind", "Redux"]
+    },
+    "third": {
+      "title": "Word Analytics",
+      "description": "Une application web publique pour des analyses rapides sur du texte. Elle affiche le nombre de mots, le nombre de caractères et les limites de publication sur les médias sociaux.",
+      "tags": ["React", "Next.js", "SQL", "Tailwind", "Framer"]
+    }
+  },
+
+    "Skills": {
+      "title":"Mes Compétences"
+    },
+
+    
+    "links": [
+      {
+        "name": "Accueil",
+        "hash": "#home"
+      },
+      {
+        "name": "À propos",
+        "hash": "#about"
+      },
+      {
+        "name": "Projets",
+        "hash": "#projects"
+      },
+      {
+        "name": "Compétences",
+        "hash": "#skills"
+      },
+      {
+        "name": "Expérience",
+        "hash": "#experience"
+      },
+      {
+        "name": "Contact",
+        "hash": "#contact"
+      }
+    ]
+  }
+  
