@@ -27,7 +27,7 @@ export const imageMapping = {
   // Add other images here
 } as const;
 
-//  helper functions to map through the translated objects
+//  ? helper functions to map through the translated objects
 export const TranslatedLinks = (currentLanguage: string) => {
   // Use the current language to determine which translation to use
   const translatedLinks = currentLanguage === 'fr' ? frlinks : enlinks;
@@ -51,7 +51,7 @@ export const TranslatedProjects = (currentLanguage: string) => {
   return translatedProjects;
 };
 
-
+//! changed it in Translation File under @locales (Deprecated)
 export const experiencesData = [
   
   {
@@ -74,29 +74,43 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "University Management System",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "University Management System  with EJB architecture, DAO pattern, with three user interfaces for administrators, teachers and students.",
+    tags: ["JavaEE", "Servlet 3.0", "MySQL", "EJB", "Bootstrap 4"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: " Digital platform in the banking sector",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Digitial marketing plateform for banking client, with products and cards suggestions to clients depending on their activities.",
+    tags: ["Angular", "Java", "SpringBoot", "PowerBI", "Angular-Material"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "AppointmentEase",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "An Appointment management system to make appointments for doctors and patients, easing the doctor/patients appointments with notifications and calendars.",
+    tags: ["Angular", "RxJs" , "SpringBoot", "Spring-Security", "Angular-Calendar" ],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Netflix-Clone",
+    description:
+      "A Netflix Clone application with two users interface Admins and Clients, with a Node Js backend and a MongoDb Database.",
+    tags: ["React", "SCSS" , "Node.js", "Express.js", "JWT" ],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "3D-Threadz",
+    description:
+      "Developed 3D Customisation Tool with React and react-three-fiber, integrating Three.js for interactive apparel customization. Gained basic knowledge of Three.js while working with React components",
+    tags: ["React", "Tailwindcss" , "Node.js", "Express.js", "Three.js" ],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
 
-//should change it in Translation File under @locales
+//! changed it in Translation File under @locales (Deprecated)
 export const educationData = [
   {
     title: "Bachelor Degree",
@@ -146,6 +160,7 @@ export const skillsData = [
   "MongoDB",
   "Docker",
   "Jenkins",
+  "RabitMQ",
   "Framer Motion",
   "Three.js",
 ] as const;
