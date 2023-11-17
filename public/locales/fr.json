@@ -1,0 +1,153 @@
+{
+    "intro": {
+      "greeting": "Bonjour, je m'appelle Firas.",
+      "desc1": "Je suis un apprenant passionné et un",
+      "desc2": "étudiant en génie logiciel,",
+      "desc3": "spécialisé dans la construction",
+      "desc4": "d'expériences numériques fluides,",
+      "desc5": "désireux de relever de nouveaux défis qui correspondent à mes ambitions professionnelles. Construisons quelque chose d'extraordinaire ensemble !",
+      "downloadCV": "Télécharger le CV",
+      "contactMe": "Contactez-moi ici"
+    },
+  
+    "About": {
+      "title":"À propos de moi",
+      "begin": "Après avoir obtenu un diplôme en",
+      "par1": "systèmes informatiques et logiciels,",
+      "par2": "j'ai décidé de poursuivre ma passion pour la programmation. J'ai suivi des études en ingénierie logicielle et j'ai continué à apprendre",
+      "par3": " le développement web full-stack,",
+      "par4": "Ma partie préférée de la programmation est l'aspect résolution de problèmes.",
+      "par5": "J'adore la sensation de finalement trouver une solution à un problème. Ma pile technologique de base est",
+      "par6": "Je suis également familier avec TypeScript avec React et NextJS. Je suis toujours prêt à apprendre de nouvelles technologies. Je recherche actuellement un poste de développeur logiciel à temps plein.",
+      "end": "Quand je ne code pas, j'aime jouer à des jeux vidéo, faire du camping et voyager. J'aime aussi apprendre de nouvelles choses. En ce moment, je me documente sur l'histoire et la philosophie. J'apprends également à jouer aux échecs."
+    },
+    "education": {
+      "main": "Mon éducation",
+      "items": [
+        {
+          "title": "baccalauréat en informatique",
+          "location": "Collège Bach Hamba, Bizerte",
+          "description": "J'ai obtenu mon baccalauréat en informatique",
+          "date": " 2017",
+          "icon": "LuGraduationCap"
+        },
+        {
+          "title": "Diplôme en informatique",
+          "location": "Université de Carthage, ISSAT Mateur",
+          "description": "J'ai obtenu mon diplôme après 3 ans d'études. Ensuite, j'ai travaillé en freelance pendant un an.",
+          "date": " 2020",
+          "icon": "PiCertificateBold"
+        },
+        {
+          "title": "Diplôme en génie logiciel",
+          "location": "Polytech Intl, Rue du Lac d'Annecy Tunis",
+          "description": "Actuellement en cours d'obtention d'un diplôme d'ingénieurie en génie logiciel, en travaillant sur des projets annexes pour améliorer mes compétences.",
+          "date": " 2021 - Présent",
+          "icon": "PiStudent"
+        }
+      ]
+    },
+    
+    "experience": {
+      "main": "Mon Expérience",
+      "items": [
+        {
+          "title": "Stage de fin d'année",
+          "location": "BFI Groupe, Lac Tunis",
+          "description": "J'ai travaillé sur une plateforme de marketing numérique pendant 6 mois avec Angular, Spring Boot et Power BI. À partir de là, j'ai développé mes compétences en full stack.",
+          "date": "01/01/2020 - 30/06/2020",
+          "icon": "CgWorkAlt"
+        },
+        {
+          "title": "Stage d'ingénieur",
+          "location": "Digit-R, Centre urbain nord Tunis",
+          "description": "Conception et mise en œuvre d'un système de gestion de rendez-vous, responsable du développement full-stack de l'application. J'ai continué après le stage à travailler sur différentes tâches en tant que freelance.",
+          "date": "01/08/2023 - 01/10/2023",
+          "icon": "CgWorkAlt"
+        }
+      ]
+    },
+ 
+
+    "projects": {
+      "main": "Mes Projets",
+      "items": [
+        {
+          "title": "Système de gestion universitaire",
+          "description": "Système de gestion universitaire avec une architecture EJB, modèle DAO, avec trois interfaces utilisateur pour les administrateurs, les enseignants et les étudiants.",
+          "tags": ["JavaEE", "Servlet 3.0", "MySQL", "EJB", "Bootstrap 4"],
+          "imageUrl": "unimanagementImg",
+          "imageAlt": "Image pour le Système de gestion universitaire"
+        },
+        {
+          "title": "Plateforme numérique dans le secteur bancaire",
+          "description": "Plateforme de marketing numérique pour les clients bancaires, avec des suggestions de produits et de cartes aux clients en fonction de leurs activités.",
+          "tags": ["Angular", "Java", "SpringBoot", "PowerBI", "Angular-Material"],
+          "imageUrl": "bfi",
+          "imageAlt": "Image pour la Plateforme numérique dans le secteur bancaire"
+        },
+        {
+          "title": "AppointmentEase Backend",
+          "description": "Un système de gestion des rendez-vous sécurisé, facilitant les rendez-vous médecin et patients avec des notifications et des calendriers.",
+          "tags": ["Java", "Spring-Boot", "Spring-Security", "Mailtrap"],
+          "imageUrl": "aptease",
+          "imageAlt": "Image pour AppointmentEase Backend"
+        },
+        {
+          "title": "AppointmentEase Frontend",
+          "description": "Un client Front-end pour le système de gestion des rendez-vous réalisé avec Angular 15.",
+          "tags": ["Angular", "Angular-Material", "RxJs" ,"Angular-Calendar"],
+          "imageUrl": "aptease",
+          "imageAlt": "Image pour AppointmentEase Frontend"
+        }
+      ]
+    },
+
+    "skills": {
+      "main":"Mes Compétences"
+    },
+
+    "contact":{
+      "main":"Contactez moi",
+      "direct":"Merci de me contacter directement au",
+      "sendto":"glaifiras44@gmail.com",
+      "or": "ou via ce formulaire.",
+      "email_placeholder":"Votre email",
+      "message_placeholder":"Votre message",
+      "submit":"soumettre"
+      },
+
+    
+    "links": [
+      {
+        "name": "Accueil",
+        "hash": "#home"
+      },
+      {
+        "name": "À propos",
+        "hash": "#about"
+      },
+      {
+        "name": "Education",
+        "hash": "#education"
+      },
+     
+      {
+        "name": "Expérience",
+        "hash": "#experience"
+      },
+      {
+        "name": "Compétences",
+        "hash": "#skills"
+      },
+      {
+        "name": "Projets",
+        "hash": "#projects"
+      },
+      {
+        "name": "Contact",
+        "hash": "#contact"
+      }
+    ]
+  }
+  

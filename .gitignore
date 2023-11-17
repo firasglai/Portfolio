@@ -13,6 +13,9 @@ node_modules/
 # Ignore Visual Studio Code settings
 .vscode/
 
+# vercel
+.vercel
+
 # Ignore macOS system files
 .DS_Store
 

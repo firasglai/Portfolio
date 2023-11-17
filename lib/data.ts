@@ -2,39 +2,61 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+
+import unimanagementImg from "@/public/UniManag.png";
+import aptease from "@/public/aptease.png";
+
+import bfi from "@/public/bfilogin.png";
+import uniImg from "@/public/registerUni.png";
+
 import {PiStudent,PiCertificateBold} from "react-icons/pi";
-import {BsBook} from "react-icons/bs"
+import {BsBook} from "react-icons/bs";
+import enlinks from "@/public/locales/en.json";
+import frlinks from "@/public/locales/fr.json";
+import * as LuIcons from 'react-icons/lu';
+import * as PiIcons from 'react-icons/pi';
+import * as CgIcons from'react-icons/cg';
 
-export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
-  {
-    name: "About",
-    hash: "#about",
-  },
-  {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
-] as const;
+// Map Icons from JSON files 
+export const iconMapping = {
+  LuGraduationCap: LuIcons.LuGraduationCap,
+  PiCertificateBold: PiIcons.PiCertificateBold,
+  PiStudent: PiIcons.PiStudent,
+  CgWorkAlt: CgIcons.CgWorkAlt,
+};
+export const imageMapping = {
+  unimanagementImg: require("@/public/UniManag.png"),
+  bfi: require("@/public/bfilogin.png"),
+  aptease: require("@/public/aptease.png"),
+  // Add other images here
+} as const;
 
+//  ? helper functions to map through the translated objects
+
+export const TranslatedLinks = (currentLanguage: string) => {
+  // Use the current language to determine which translation to use
+  const translatedLinks = currentLanguage === 'fr' ? frlinks : enlinks;
+  return translatedLinks.links.map((link) => ({
+    ...link,
+    name: link.name, 
+  }));
+};
+export const TranslatedEducation = (currentLanguage: string) => {
+  const translatedEducation = currentLanguage === 'fr' ? frlinks.education : enlinks.education;
+  return translatedEducation;
+};
+
+export const TranslatedExperience = (currentLanguage: string) => {
+const translatedExpericence = currentLanguage === 'fr' ? frlinks.experience : enlinks.experience;
+return translatedExpericence;
+}
+
+export const TranslatedProjects = (currentLanguage: string) => {
+  const translatedProjects = currentLanguage === 'fr' ? frlinks.projects : enlinks.projects;
+  return translatedProjects;
+};
+
+//! changed it in Translation File under @locales (Deprecated)
 export const experiencesData = [
   
   {
@@ -46,26 +68,10 @@ export const experiencesData = [
     date: "01/01/2020 - 30/06/2020",
   },
   {
-    title: "Computer science degree",
-    location: "Carthage University , ISSAT Mateur",
-    description:
-      "I graduated after 3 years of studying. and then i tried freelancing for a year . ",
-    icon: React.createElement(PiCertificateBold),
-    date: "2020",
-  },
-  {
-    title: "Software engineer",
-    location: "Polytech intl, rue du lac d'Annecy Tunis",
-    description:
-      "I'm now studying for a software engineering degree, while also continuing to freelance and working on some side projects to keep on enhancing my skills and learning new technologies .",
-    icon: React.createElement(PiStudent),
-    date: "2021 - present",
-  },
-  {
     title: "Internship",
     location: "Digit-R, Centre urbain nord Tunis",
     description:
-      "The design and implementation of an Appointment managemment system, responsible for the fullstack development of the application, i continued after the internship to work on tasks as a freelancer.",
+      "The design and implementation of an Appointment managemment system, responsible for the fullstack development of the application, i continued after the internship to work on different tasks as a freelancer.",
     icon: React.createElement(CgWorkAlt),
     date: "01/08/2023 - 01/10/2023",
   },
@@ -73,27 +79,63 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "University Management System",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "University Management System  with EJB architecture, DAO pattern, with three user interfaces for administrators, teachers and students.",
+    tags: ["JavaEE", "Servlet 3.0", "MySQL", "EJB", "Bootstrap 4"],
+    imageUrl: unimanagementImg,
   },
   {
-    title: "rmtDev",
+    title: " Digital platform in the banking sector",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Digitial marketing plateform for banking client, with products and cards suggestions to clients depending on their activities.",
+    tags: ["Angular", "Java", "SpringBoot", "PowerBI", "Angular-Material"],
+    imageUrl: bfi,
   },
   {
-    title: "Word Analytics",
+    title: "AppointmentEase Backend",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A secure Appointment management system , easing the doctor and patients appointments with notifications and calendars.",
+    tags: ["Java", "Spring-Boot", "Spring-Security", "Mailtrap"],
+    imageUrl: aptease,
+  },
+  {
+    title: "AppointmentEase Frontend",
+    description:
+      "A Front-end Client for the  Appointment management system made with Angular 15.",
+    tags: ["Angular", "Angular-Material", "RxJs" ,"Angular-Calendar" ],
+    imageUrl: aptease,
   },
 ] as const;
+
+//! changed it in Translation File under @locales (Deprecated)
+export const educationData = [
+  {
+    title: "Bachelor Degree",
+    location: "Bach Hamba college , Bizerte",
+    description:
+      "I graduated with a bachlor degree in computer science.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2017",
+  },
+  {
+    title: "Computer Science Degree",
+    location: "Carthage University, ISSAT Mateur",
+    description:
+      "I graduated after 3 years of studying. Then, I tried freelancing for a year.",
+    icon: React.createElement(PiCertificateBold),
+    date: "2020",
+  },
+  {
+    title: "Software Engineering Degree",
+    location: "Polytech Intl, Rue du Lac d'Annecy Tunis",
+    description:
+      "Currently studying for a software engineering degree, while working on side projects to enhance my skills.",
+    icon: React.createElement(PiStudent),
+    date: "2021 - Present",
+  },
+] as const;
+
 
 export const skillsData = [
   "HTML",
@@ -116,6 +158,7 @@ export const skillsData = [
   "MongoDB",
   "Docker",
   "Jenkins",
+  "RabitMQ",
   "Framer Motion",
   "Three.js",
 ] as const;

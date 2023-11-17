@@ -1,0 +1,155 @@
+{
+    "intro": {
+        "greeting": "Hello, I'm Firas.",
+        "desc1": "I'm a lifelong learner and a passionate",
+        "desc2": "Software Enginnering Student,",
+        "desc3":"specializing in building",
+        "desc4":"seamless digital experiences,",
+        "desc5":"eager to take on new challenges that align with my career ambitions, Let's build something amazing together!",
+        "downloadCV": "Download CV",
+        "contactMe": "Contact Me Here"
+      },
+
+      "About":{
+        "title":"About me",
+        "begin":"After graduating with a",
+        "par1":"computer systems and software degree, ",
+        "par2":"I decided to pursue my passion for programming. I enrolled in software enginnering studies while pursuing to learn ",
+        "par3":"full-stack web development",
+        "par4":"My favorite part of programming is the problem-solving aspect. ",
+        "par5":"I love the feeling of finally figuring out a solution to a problem.My core stack is ",
+        "par6":"I am also familiar with TypeScript with React and NextJS . I am always looking to learn new technologies. I am currently looking for a full-time position as a software developer. ",
+        "end":"when i'm not coding I enjoy playing video games, camping, and traveling. I also enjoy learning new things I am currently learning about history and philosophy , i'm also learning how to play chess "
+      }, 
+
+
+      "education": {
+        "main": "My Education",
+        "items": [
+          {
+            "title": "Bachelor Degree",
+            "location": "Bach Hamba college , Bizerte",
+            "description": "I graduated with a bachlor degree in computer science.",
+            "date": "2017",
+            "icon": "LuGraduationCap"
+          },
+          {
+            "title": "Computer Science Degree",
+            "location": "Carthage University, ISSAT Mateur",
+            "description": "I graduated after 3 years of studying. Then, I tried freelancing for a year.",
+            "date": "2020",
+            "icon": "PiCertificateBold"
+          },
+          {
+            "title": "Software Engineering Degree",
+            "location": "Polytech Intl, Rue du Lac d'Annecy Tunis",
+            "description": "Currently studying for a software engineering degree, while working on side projects to enhance skills.",
+            "date": "2021 - Present",
+            "icon": "PiStudent"
+          }
+        ]
+      },
+      "experience": {
+        "main": "My Experience",
+        "items": [
+          {
+            "title": "End of Year Internship",
+            "location": "BFI Groupe, Lac Tunis",
+            "description": "I worked on a digital marketing platform for 6 months with Angular, Spring Boot, and Power BI. From there, I upskilled to full stack.",
+            "date": "01/01/2020 - 30/06/2020",
+            "icon": "CgWorkAlt"
+          },
+          {
+            "title": "Engineering Internship",
+            "location": "Digit-R, Centre urbain nord Tunis",
+            "description": "The design and implementation of an Appointment Management System, responsible for the full-stack development of the application. I continued after the internship to work on different tasks as a freelancer.",
+            "date": "01/08/2023 - 01/10/2023",
+            "icon": "CgWorkAlt"
+          }
+        ]
+      },
+
+
+      "projects": {
+        "main": "My Projects",
+        "items": [
+          {
+            "title": "University Management System",
+            "description": "University Management System with EJB architecture, DAO pattern, with three user interfaces for administrators, teachers, and students.",
+            "tags": ["JavaEE", "Servlet 3.0", "MySQL", "EJB", "Bootstrap 4"],
+            "imageUrl": "unimanagementImg",
+            "imageAlt": "Image for University Management System"
+          },
+          {
+            "title": "Digital platform in the banking sector",
+            "description": "Digital marketing platform for banking clients, with product and card suggestions to clients depending on their activities.",
+            "tags": ["Angular", "Java", "SpringBoot", "PowerBI", "Angular-Material"],
+            "imageUrl": "bfi",
+            "imageAlt": "Image for Digital platform in the banking sector"
+          },
+          {
+            "title": "AppointmentEase Backend",
+            "description": "A secure Appointment management system, easing the doctor and patients appointments with notifications and calendars.",
+            "tags": ["Java", "Spring-Boot", "Spring-Security", "Mailtrap"],
+            "imageUrl": "aptease",
+            "imageAlt": "Image for AppointmentEase Backend"
+          },
+          {
+            "title": "AppointmentEase Frontend",
+            "description": "A Front-end Client for the Appointment management system made with Angular 15.",
+            "tags": ["Angular", "Angular-Material", "RxJs" ,"Angular-Calendar"],
+            "imageUrl": "aptease",
+            "imageAlt": "Image for AppointmentEase Frontend"
+          }
+        ]
+      },
+
+    "skills": {
+      "main":"My skills"
+    },
+
+    "contact":{
+      "main":"Contact me",
+      "direct":"Please contact me directly at",
+      "sendto":"glaifiras44@gmail.com",
+      "or": "or through this form.",
+      "email_placeholder":"Your email",
+      "message_placeholder":"Your message",
+      "submit":"submit"
+      },
+
+      "links": [
+        {
+          "name": "Home",
+          "hash": "#home"
+        },
+        {
+          "name": "About",
+          "hash": "#about"
+        },
+        {
+          "name": "Education",
+          "hash": "#education"
+        },
+        {
+          "name": "Experience",
+          "hash": "#experience"
+        },
+        {
+          "name": "Skills",
+          "hash": "#skills"
+        },
+        {
+          "name": "Projects",
+          "hash": "#projects"
+        },
+        {
+          "name": "Contact",
+          "hash": "#contact"
+        }
+      ]
+
+      
+    }
+  
+  

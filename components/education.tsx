@@ -1,5 +1,5 @@
-"use client";
 
+"use client";
 import React from "react";
 import SectionHeading from "./section-heading";
 import {
@@ -7,24 +7,24 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { experiencesData } from "@/lib/data";
+import { educationData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 import { useTranslation } from 'react-i18next';
-import {TranslatedExperience, iconMapping} from "@/lib/data";
+import {TranslatedEducation, iconMapping} from "@/lib/data";
+export default function Education() {
 
-export default function Experience() {
-  const { ref } = useSectionInView("Experience");
-  const { theme } = useTheme();
-  const { t, i18n } = useTranslation();
-  const translatedExperience = TranslatedExperience(i18n.language);
-  const experienceItems = Object.values(translatedExperience.items);
-  
-  return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading>{t('experience.main')}</SectionHeading>
-      <VerticalTimeline lineColor="">
-      {experienceItems.map((item, index) => {
+    const { ref } = useSectionInView("Education");
+    const { theme } = useTheme();
+    const { t, i18n } = useTranslation();
+
+    const translatedEducation = TranslatedEducation(i18n.language);
+    const educationItems = Object.values(translatedEducation.items);
+    return (
+        <section id="education" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+          <SectionHeading>{t('education.main')}</SectionHeading>
+          <VerticalTimeline lineColor="">
+          {educationItems.map((item, index) => {
           const IconComponent = iconMapping[item.icon]; 
           return (
             <React.Fragment key={index}>
@@ -60,7 +60,8 @@ export default function Experience() {
             </React.Fragment>
           );
         })}
-      </VerticalTimeline>
-    </section>
-  );
+          </VerticalTimeline>
+        </section>
+      );
+
 }

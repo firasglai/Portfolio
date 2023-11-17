@@ -1,7 +1,10 @@
 "use client";
 
 import type { SectionName } from "@/lib/types";
+import { TranslatedLinks } from "@/lib/data";
 import React, { useState, createContext, useContext } from "react";
+import { useTranslation } from 'react-i18next';
+
 
 type ActiveSectionContextProviderProps = {
   children: React.ReactNode;
@@ -20,7 +23,12 @@ export const ActiveSectionContext =
 export default function ActiveSectionContextProvider({
   children,
 }: ActiveSectionContextProviderProps) {
-  const [activeSection, setActiveSection] = useState<SectionName>("Home");
+  const { i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+  const translatedLinks = TranslatedLinks(currentLanguage);
+  const [activeSection, setActiveSection] = useState<SectionName>(
+    translatedLinks[0]?.name || 'Home'
+  );
   const [timeOfLastClick, setTimeOfLastClick] = useState(0); // we need to keep track of this to disable the observer temporarily when user clicks on a link
 
   return (
