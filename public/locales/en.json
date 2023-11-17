@@ -2,7 +2,7 @@
     "intro": {
         "greeting": "Hello, I'm Firas.",
         "desc1": "I'm a lifelong learner and a passionate",
-        "desc2": "Software enginnering student,",
+        "desc2": "Software Enginnering Student,",
         "desc3":"specializing in building",
         "desc4":"seamless digital experiences,",
         "desc5":"eager to take on new challenges that align with my career ambitions, Let's build something amazing together!",
@@ -14,11 +14,11 @@
         "title":"About me",
         "begin":"After graduating with a",
         "par1":"computer systems and software degree, ",
-        "par2":"I decided to pursue my passion for programming. I enrolled in software enginnering and continued to learn ",
+        "par2":"I decided to pursue my passion for programming. I enrolled in software enginnering studies while pursuing to learn ",
         "par3":"full-stack web development",
         "par4":"My favorite part of programming is the problem-solving aspect. ",
         "par5":"I love the feeling of finally figuring out a solution to a problem.My core stack is ",
-        "par6":"I am also familiar with TypeScript with React and NextJS . I am always looking to learn new technologies. I am currently looking for a full-time position as a softwar developer. ",
+        "par6":"I am also familiar with TypeScript with React and NextJS . I am always looking to learn new technologies. I am currently looking for a full-time position as a software developer. ",
         "end":"when i'm not coding I enjoy playing video games, camping, and traveling. I also enjoy learning new things I am currently learning about history and philosophy , i'm also learning how to play chess "
       }, 
 
@@ -74,25 +74,32 @@
         "main": "My Projects",
         "items": [
           {
-            "title": "CorpComment",
-            "description": "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-            "tags": ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-            "imageUrl": "corpcommentImg",
-            "imageAlt": "CorpComment Image"
+            "title": "University Management System",
+            "description": "University Management System with EJB architecture, DAO pattern, with three user interfaces for administrators, teachers, and students.",
+            "tags": ["JavaEE", "Servlet 3.0", "MySQL", "EJB", "Bootstrap 4"],
+            "imageUrl": "unimanagementImg",
+            "imageAlt": "Image for University Management System"
           },
           {
-            "title": "rmtDev",
-            "description": "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-            "tags": ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-            "imageUrl": "rmtdevImg",
-            "imageAlt": "CorpComment Image"
+            "title": "Digital platform in the banking sector",
+            "description": "Digital marketing platform for banking clients, with product and card suggestions to clients depending on their activities.",
+            "tags": ["Angular", "Java", "SpringBoot", "PowerBI", "Angular-Material"],
+            "imageUrl": "bfi",
+            "imageAlt": "Image for Digital platform in the banking sector"
           },
           {
-            "title": "Word Analytics",
-            "description": "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-            "tags": ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-            "imageUrl": "corpcommentImg",
-            "imageAlt": "CorpComment Image"
+            "title": "AppointmentEase Backend",
+            "description": "A secure Appointment management system, easing the doctor and patients appointments with notifications and calendars.",
+            "tags": ["Java", "Spring-Boot", "Spring-Security", "Mailtrap"],
+            "imageUrl": "aptease",
+            "imageAlt": "Image for AppointmentEase Backend"
+          },
+          {
+            "title": "AppointmentEase Frontend",
+            "description": "A Front-end Client for the Appointment management system made with Angular 15.",
+            "tags": ["Angular", "Angular-Material", "RxJs" ,"Angular-Calendar"],
+            "imageUrl": "aptease",
+            "imageAlt": "Image for AppointmentEase Frontend"
           }
         ]
       },

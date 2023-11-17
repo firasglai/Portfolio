@@ -2,9 +2,13 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+
+import unimanagementImg from "@/public/UniManag.png";
+import aptease from "@/public/aptease.png";
+
+import bfi from "@/public/bfilogin.png";
+import uniImg from "@/public/registerUni.png";
+
 import {PiStudent,PiCertificateBold} from "react-icons/pi";
 import {BsBook} from "react-icons/bs";
 import enlinks from "@/public/locales/en.json";
@@ -21,13 +25,14 @@ export const iconMapping = {
   CgWorkAlt: CgIcons.CgWorkAlt,
 };
 export const imageMapping = {
-  corpcommentImg: require("@/public/corpcomment.png"),
-  rmtdevImg: require("@/public/rmtdev.png"),
-  wordanalyticsImg: require("@/public/wordanalytics.png"),
+  unimanagementImg: require("@/public/UniManag.png"),
+  bfi: require("@/public/bfilogin.png"),
+  aptease: require("@/public/aptease.png"),
   // Add other images here
 } as const;
 
 //  ? helper functions to map through the translated objects
+
 export const TranslatedLinks = (currentLanguage: string) => {
   // Use the current language to determine which translation to use
   const translatedLinks = currentLanguage === 'fr' ? frlinks : enlinks;
@@ -78,35 +83,28 @@ export const projectsData = [
     description:
       "University Management System  with EJB architecture, DAO pattern, with three user interfaces for administrators, teachers and students.",
     tags: ["JavaEE", "Servlet 3.0", "MySQL", "EJB", "Bootstrap 4"],
-    imageUrl: corpcommentImg,
+    imageUrl: unimanagementImg,
   },
   {
     title: " Digital platform in the banking sector",
     description:
       "Digitial marketing plateform for banking client, with products and cards suggestions to clients depending on their activities.",
     tags: ["Angular", "Java", "SpringBoot", "PowerBI", "Angular-Material"],
-    imageUrl: rmtdevImg,
+    imageUrl: bfi,
   },
   {
-    title: "AppointmentEase",
+    title: "AppointmentEase Backend",
     description:
-      "An Appointment management system to make appointments for doctors and patients, easing the doctor/patients appointments with notifications and calendars.",
-    tags: ["Angular", "RxJs" , "SpringBoot", "Spring-Security", "Angular-Calendar" ],
-    imageUrl: wordanalyticsImg,
+      "A secure Appointment management system , easing the doctor and patients appointments with notifications and calendars.",
+    tags: ["Java", "Spring-Boot", "Spring-Security", "Mailtrap"],
+    imageUrl: aptease,
   },
   {
-    title: "Netflix-Clone",
+    title: "AppointmentEase Frontend",
     description:
-      "A Netflix Clone application with two users interface Admins and Clients, with a Node Js backend and a MongoDb Database.",
-    tags: ["React", "SCSS" , "Node.js", "Express.js", "JWT" ],
-    imageUrl: wordanalyticsImg,
-  },
-  {
-    title: "3D-Threadz",
-    description:
-      "Developed 3D Customisation Tool with React and react-three-fiber, integrating Three.js for interactive apparel customization. Gained basic knowledge of Three.js while working with React components",
-    tags: ["React", "Tailwindcss" , "Node.js", "Express.js", "Three.js" ],
-    imageUrl: wordanalyticsImg,
+      "A Front-end Client for the  Appointment management system made with Angular 15.",
+    tags: ["Angular", "Angular-Material", "RxJs" ,"Angular-Calendar" ],
+    imageUrl: aptease,
   },
 ] as const;
 

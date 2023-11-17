@@ -13,8 +13,6 @@ export default function Header() {
   const { i18n } = useTranslation();
   // TranslatedLinks function to get the translated links
   const translatedLinks = TranslatedLinks(i18n.language);
-  
-
   return (
     <header className="z-[999] relative">
     <motion.div
