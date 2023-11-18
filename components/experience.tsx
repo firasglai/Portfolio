@@ -25,7 +25,8 @@ export default function Experience() {
       <SectionHeading>{t('experience.main')}</SectionHeading>
       <VerticalTimeline lineColor="">
       {experienceItems.map((item, index) => {
-          const IconComponent = iconMapping[item.icon]; 
+         const IconComponent = iconMapping[item.icon as keyof typeof iconMapping];
+
           return (
             <React.Fragment key={index}>
               <VerticalTimelineElement

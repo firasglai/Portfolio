@@ -25,7 +25,8 @@ export default function Education() {
           <SectionHeading>{t('education.main')}</SectionHeading>
           <VerticalTimeline lineColor="">
           {educationItems.map((item, index) => {
-          const IconComponent = iconMapping[item.icon]; 
+        const IconComponent = iconMapping[item.icon as keyof typeof iconMapping];
+
           return (
             <React.Fragment key={index}>
               <VerticalTimelineElement
