@@ -8,6 +8,7 @@ import LanguageSwitch from "@/components/language-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 import { LanguageContextProvider } from "@/context/language-context";
+import { Analytics } from '@vercel/analytics/react';
 import i18n from '@/i18n';
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,6 +40,7 @@ export default function RootLayout({
             <Toaster position="top-right" />
             <ThemeSwitch />
             <LanguageSwitch />
+            <Analytics />
           </ActiveSectionContextProvider>
           </LanguageContextProvider>
         </ThemeContextProvider>
