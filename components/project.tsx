@@ -1,10 +1,13 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { FaGithub, FaEye } from "react-icons/fa";
+import { MdPreview } from "react-icons/md";
+import toast from 'react-hot-toast';
 type ProjectProps = (typeof projectsData)[number];
 
 export default function Project({
@@ -12,8 +15,11 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  githubrepo,
+  preview,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
+  const [isHovered, setIsHovered] = useState(false);
   const { t } = useTranslation();
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -21,7 +27,9 @@ export default function Project({
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
-
+  const showToast = () => {
+    toast.error("Live Project is coming soon");
+  };
   return (
     <motion.div
       ref={ref}
@@ -31,9 +39,38 @@ export default function Project({
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <h3 className="text-2xl font-semibold">{title}</h3>
+     
+      <section 
+      className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+        <div className="pt-3 pb-4 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
+        <div className="flex items-center space-x-2 text-black/[0.7] -mt-6">  
+        {preview ? (
+              <a
+                href={preview}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button
+                  className="flex gap-3 cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black px-3 py-1 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-gray-500 hover:border-gray-800 hover:from-black hover:to-gray-900"
+                >
+                  <MdPreview size={15} />
+                </button>
+              </a>
+            ) : (
+              <button
+                onClick={showToast}
+                className="flex gap-3 cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black px-3 py-1 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-gray-500 hover:border-gray-800 hover:from-black hover:to-gray-900"
+              >
+                <MdPreview size={15} />
+              </button>
+            )}
+        <a href={githubrepo} target="_blank" rel="noopener noreferrer">
+        <button className="flex gap-3 cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black px-3 py-1 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-gray-500 hover:border-gray-800 hover:from-black hover:to-gray-900">
+            <FaGithub size={15}/>
+        </button>
+        </a>
+        </div>
+          <h3 className="text-2xl font-semibold mt-4">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
           {description}
           </p>
@@ -45,7 +82,7 @@ export default function Project({
               >
                 {tag}
               </li>
-            ))}
+            ))}    
           </ul>
         </div>
         <Image

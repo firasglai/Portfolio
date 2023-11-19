@@ -52,14 +52,14 @@
       "main": "Mon Expérience",
       "items": [
         {
-          "title": "Stage de fin d'année",
+          "title": "Stage PFE",
           "location": "BFI Groupe, Lac Tunis",
           "description": "J'ai travaillé sur une plateforme de marketing numérique pendant 6 mois avec Angular, Spring Boot et Power BI. À partir de là, j'ai développé mes compétences en full stack.",
           "date": "01/01/2020 - 30/06/2020",
           "icon": "CgWorkAlt"
         },
         {
-          "title": "Stage d'ingénieur",
+          "title": "Stage ingénieur",
           "location": "Digit-R, Centre urbain nord Tunis",
           "description": "Conception et mise en œuvre d'un système de gestion de rendez-vous, responsable du développement full-stack de l'application. J'ai continué après le stage à travailler sur différentes tâches en tant que freelance.",
           "date": "01/08/2023 - 01/10/2023",

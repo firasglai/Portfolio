@@ -81,9 +81,11 @@ export const projectsData = [
   {
     title: "University Management System",
     description:
-      "University Management System  with EJB architecture, DAO pattern, with three user interfaces for administrators, teachers and students.",
+      "University Management System  with EJB architecture, DAO pattern, and three interfaces for administrators, teachers and students.",
     tags: ["JavaEE", "Servlet 3.0", "MySQL", "EJB", "Bootstrap 4"],
     imageUrl: unimanagementImg,
+    githubrepo:"https://github.com/firasglai/JavaEE-management-web-app",
+    preview:"",
   },
   {
     title: " Digital platform in the banking sector",
@@ -91,6 +93,8 @@ export const projectsData = [
       "Digitial marketing plateform for banking client, with products and cards suggestions to clients depending on their activities.",
     tags: ["Angular", "Java", "SpringBoot", "PowerBI", "Angular-Material"],
     imageUrl: bfi,
+    githubrepo:"https://github.com/firasglai/Digital-Marketing-App-Back-end",
+    preview:"",
   },
   {
     title: "AppointmentEase Backend",
@@ -98,14 +102,18 @@ export const projectsData = [
       "A secure Appointment management system , easing the doctor and patients appointments with notifications and calendars.",
     tags: ["Java", "Spring-Boot", "Spring-Security", "Mailtrap"],
     imageUrl: aptease,
+    githubrepo:"https://github.com/firasglai/Hospital-Backend",
+    preview:"",
   },
-  {
-    title: "AppointmentEase Frontend",
-    description:
-      "A Front-end Client for the  Appointment management system made with Angular 15.",
-    tags: ["Angular", "Angular-Material", "RxJs" ,"Angular-Calendar" ],
-    imageUrl: aptease,
-  },
+    {
+      title: "AppointmentEase Frontend",
+      description:
+        "A Front-end Client for the  Appointment management system made with Angular 15.",
+      tags: ["Angular", "Angular-Material", "RxJs" ,"Angular-Calendar" ],
+      imageUrl: aptease,
+      githubrepo:"https://github.com/firasglai/Angular_Hospital",
+      preview:"",
+    },
 ] as const;
 
 //! changed it in Translation File under @locales (Deprecated)
