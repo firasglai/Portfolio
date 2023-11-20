@@ -10,6 +10,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import profileImg from "@/public/main.jpg";
+import newImg from "@/public/portfolio_new_main.jpg"; 
 import { useTranslation } from 'react-i18next';
 export default function Intro() {
   const { t, i18n } = useTranslation();;
@@ -34,7 +35,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src={profileImg}
+              src={newImg}
               alt="Firas portrait"
               width="192"
               height="192"

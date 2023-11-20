@@ -11,7 +11,6 @@ import { LanguageContextProvider } from "@/context/language-context";
 import { Analytics } from '@vercel/analytics/react';
 import i18n from '@/i18n';
 const inter = Inter({ subsets: ["latin"] });
-
 export const metadata = {
   title: "Firas | Personal Portfolio",
   description: "Firas is a Junior full-stack developer.",
