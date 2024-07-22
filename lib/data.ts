@@ -8,9 +8,11 @@ import aptease from "@/public/aptease.png";
 
 import bfi from "@/public/bfilogin.png";
 import uniImg from "@/public/registerUni.png";
-
+import reddiamond from "@/public/redDiamond.png";
+import ecommerce from "@/public/home.png";
 import {PiStudent,PiCertificateBold} from "react-icons/pi";
 import {BsBook} from "react-icons/bs";
+import springBackend from "@/public/springBackend.jpg";
 import enlinks from "@/public/locales/en.json";
 import frlinks from "@/public/locales/fr.json";
 import * as LuIcons from 'react-icons/lu';
@@ -99,9 +101,9 @@ export const projectsData = [
   {
     title: "AppointmentEase Backend",
     description:
-      "A secure Appointment management system , easing the doctor and patients appointments with notifications and calendars.",
-    tags: ["Java", "Spring-Boot", "Spring-Security", "Mailtrap"],
-    imageUrl: aptease,
+      "A secure Appointment management system , easing the doctor and patients appointments with notifications.",
+    tags: ["Spring-Boot", "Spring-Security", "Mailtrap", "MySQL"],
+    imageUrl: springBackend,
     githubrepo:"https://github.com/firasglai/Hospital-Backend",
     preview:"",
   },
@@ -112,6 +114,24 @@ export const projectsData = [
       tags: ["Angular", "Angular-Material", "RxJs" ,"Angular-Calendar" ],
       imageUrl: aptease,
       githubrepo:"https://github.com/firasglai/Angular_Hospital",
+      preview:"",
+    },
+    {
+      title: "Music Label Production Management System",
+      description:
+        "Front End Developper role, took part in developping a management system for a music label production company.",
+      tags: ["React", "SCSS", "Chartjs" ,"Zustand" ],
+      imageUrl: reddiamond,
+      githubrepo:"https://github.com/firasglai/Red-Front",
+      preview:"",
+    },
+    {
+      title: "Modern E-Commerce Application",
+      description:
+        "Next.js ecommerce app, with Framer Motion animations and modern UI/UX design",
+      tags: ["NextJs", "TailwindCSS", "Framer-Motion" ,"Zustand", "Stripe", "Strapi CMS"],
+      imageUrl: ecommerce,
+      githubrepo:"https://github.com/firasglai/Clothing-Shop",
       preview:"",
     },
 ] as const;
