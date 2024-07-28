@@ -64,6 +64,13 @@
           "description": "Conception et mise en œuvre d'un système de gestion de rendez-vous, responsable du développement full-stack de l'application. J'ai continué après le stage à travailler sur différentes tâches en tant que freelance.",
           "date": "01/08/2023 - 01/10/2023",
           "icon": "CgWorkAlt"
+        },
+        {
+          "title": "Développeur Frontend",
+          "location": "Red-Diamond",
+          "description": "Rôle de développeur Front End indépendant, a participé au développement d'un système de gestion pour une société de production de labels musicaux.",
+          "date": "12/2023 - 04/2024",
+          "icon": "CgWorkAlt"
         }
       ]
     },
@@ -104,7 +111,7 @@
     },
 
     "skills": {
-      "main":"Mes Compétences"
+      "main":"Compétences"
     },
 
     "contact":{
@@ -124,7 +131,7 @@
         "hash": "#home"
       },
       {
-        "name": "À propos",
+        "name": "Intro",
         "hash": "#about"
       },
       {

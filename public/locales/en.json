@@ -1,6 +1,6 @@
 {
     "intro": {
-        "greeting": "Hello, I'm Firas.",
+        "greeting": "Hello, I'm Firas",
         "desc1": "I'm a lifelong learner and a passionate",
         "desc2": "Full Stack Developer,",
         "desc3":"specializing in building",
@@ -65,6 +65,13 @@
             "description": "The design and implementation of an Appointment Management System, responsible for the full-stack development of the application. I continued after the internship to work on different tasks as a freelancer.",
             "date": "01/08/2023 - 01/10/2023",
             "icon": "CgWorkAlt"
+          },
+          {
+            "title": "Frontend Developer",
+            "location": "Red-Diamond",
+            "description": "Freelance Front End Developper role, took part in developping a management system for a music label production company.",
+            "date": "12/2023 - 04/2024",
+            "icon": "CgWorkAlt"
           }
         ]
       },
@@ -105,7 +112,7 @@
       },
 
     "skills": {
-      "main":"My skills"
+      "main": "Skills"
     },
 
     "contact":{

@@ -6,6 +6,7 @@ import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
 import Education from "@/components/education";
+import { IconStack } from "@/components/stack";
 import { withTranslation } from 'react-i18next';
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Education />
       <Experience />
       <Skills />
+      {/* <IconStack/> */}
       <Projects />
       <Contact />
       
