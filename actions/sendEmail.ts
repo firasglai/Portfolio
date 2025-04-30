@@ -8,8 +8,8 @@ import ContactFormEmail from "@/email/contact-form-email";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendEmail = async (formData: FormData) => {
-  const senderEmail = formData.get("senderEmail");
-  const message = formData.get("message");
+  const senderEmail = formData.get("senderEmail") as string;
+  const message = formData.get("message") as string;
 
   // simple server-side validation
   if (!validateString(senderEmail, 500)) {
