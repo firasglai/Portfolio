@@ -8,6 +8,9 @@ import { useTranslation } from "react-i18next";
 import { FaGithub, FaEye } from "react-icons/fa";
 import { MdPreview } from "react-icons/md";
 import toast from 'react-hot-toast';
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+
 type ProjectProps = (typeof projectsData)[number];
 
 export default function Project({
@@ -17,6 +20,7 @@ export default function Project({
   imageUrl,
   githubrepo,
   preview,
+  id,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
@@ -27,9 +31,20 @@ export default function Project({
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+  
   const showToast = () => {
-    toast.error("Live Project is coming soon");
+    toast.error(t('projects.livePreviewSoon', "Live Project is coming soon"));
   };
+  
+  const handleButtonClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    e.preventDefault();
+  };
+   
+  if (!id) {
+    console.error("Project is missing ID:", title);
+  }
+  
   return (
     <motion.div
       ref={ref}
@@ -39,68 +54,33 @@ export default function Project({
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-     
-      <section 
-      className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20 space-y-4">
-        <div className="pt-6 pb-2 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-        <div className="flex items-center space-x-2 text-black/[0.7] -mt-6">  
-        {preview ? (
-              <a
-                href={preview}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button
-                  className="flex gap-3 cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black px-3 py-1 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-gray-500 hover:border-gray-800 hover:from-black hover:to-gray-900"
-                >
-                  <MdPreview size={15} />
-                </button>
-              </a>
-            ) : (
-              <button
-                onClick={showToast}
-                className="flex gap-3 cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black px-3 py-1 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-gray-500 hover:border-gray-800 hover:from-black hover:to-gray-900"
-              >
-                <MdPreview size={15} />
-              </button>
-            )}
-        <a href={githubrepo} target="_blank" rel="noopener noreferrer">
-        <button className="flex gap-3 cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black px-3 py-1 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-gray-500 hover:border-gray-800 hover:from-black hover:to-gray-900">
-            <FaGithub size={15}/>
-        </button>
-        </a>
-        </div>
-          <h3 className="text-2xl font-semibold mt-4">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
-          {description}
-          </p>
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-            {tags.map((tag, index) => (
-              <li
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                key={index}
-              >
-                {tag}
-              </li>
-            ))}    
-          </ul>
-        </div>
-        <Image
-          src={imageUrl}
-          alt="Project I worked on"
-          quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-        transition 
-        group-hover:scale-[1.04]
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2
-        group-even:group-hover:translate-x-3
-        group-even:group-hover:translate-y-3
-        group-even:group-hover:rotate-2
-        group-even:right-[initial] group-even:-left-40"
-        />
-      </section>
+      <Link href={`/project/${id}`}>
+        <section 
+        className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20 space-y-4">
+          <div className="pt-6 pb-2 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
+            <h3 className="text-2xl font-semibold mt-4">{title}</h3>
+            <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+            {description}
+            </p>
+          </div>
+          <div className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40 overflow-hidden">
+            <Image
+              src={imageUrl}
+              alt={title}
+              quality={95}
+              className="w-full h-full object-cover"
+            />
+            {/* Blurry overlay with text on hover */}
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="w-full h-full backdrop-blur-sm bg-black/20 flex items-center justify-center rounded-t-lg">
+                <span className="flex items-center gap-1 text-white text-base font-medium drop-shadow-lg">
+                  more details <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </Link>
     </motion.div>
   );
 }

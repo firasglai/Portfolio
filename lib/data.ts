@@ -55,6 +55,24 @@ return translatedExpericence;
 
 export const TranslatedProjects = (currentLanguage: string) => {
   const translatedProjects = currentLanguage === 'fr' ? frlinks.projects : enlinks.projects;
+  
+  // Map image URLs from string keys to actual image objects
+  if (translatedProjects.items) {
+    translatedProjects.items = translatedProjects.items.map((project: any) => {
+      // Find the corresponding project from projectsData to ensure we have the right image
+      const originalProject = projectsData.find(p => p.id === project.id);
+      
+      if (originalProject && project.imageUrl && typeof project.imageUrl === 'string') {
+        // If the imageUrl is a string key in the imageMapping, replace it with the actual image
+        if (imageMapping[project.imageUrl as keyof typeof imageMapping]) {
+          project.imageUrl = imageMapping[project.imageUrl as keyof typeof imageMapping];
+        }
+      }
+      
+      return project;
+    });
+  }
+  
   return translatedProjects;
 };
 
@@ -81,6 +99,7 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    id: "university-management",
     title: "University Management System",
     description:
       "University Management System  with EJB architecture, DAO pattern, and three interfaces for administrators, teachers and students.",
@@ -90,6 +109,7 @@ export const projectsData = [
     preview:"",
   },
   {
+    id: "digital-banking-platform",
     title: " Digital platform in the banking sector",
     description:
       "Digitial marketing plateform for banking client, with products and cards suggestions to clients depending on their activities.",
@@ -99,6 +119,7 @@ export const projectsData = [
     preview:"",
   },
   {
+    id: "appointmentease-backend",
     title: "AppointmentEase Backend",
     description:
       "A secure Appointment management system , easing the doctor and patients appointments with notifications.",
@@ -108,6 +129,7 @@ export const projectsData = [
     preview:"",
   },
     {
+      id: "appointmentease-frontend",
       title: "AppointmentEase Frontend",
       description:
         "A Front-end Client for the  Appointment management system made with Angular 15.",
@@ -117,6 +139,7 @@ export const projectsData = [
       preview:"",
     },
     {
+      id: "music-label-management",
       title: "Music Label Production Management System",
       description:
         "Front End Developper role, took part in developping a management system for a music label production company.",
@@ -126,6 +149,7 @@ export const projectsData = [
       preview:"",
     },
     {
+      id: "modern-ecommerce",
       title: "Modern E-Commerce Application",
       description:
         "Next.js ecommerce app, with Framer Motion animations and modern UI/UX design",

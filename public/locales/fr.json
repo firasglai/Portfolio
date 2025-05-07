@@ -78,34 +78,195 @@
 
     "projects": {
       "main": "Mes Projets",
+      "backToProjects": "Retour aux projets",
+      "projectType": "APPLICATION WEB FULL-STACK",
+      "techStack": "Technologies Utilisées",
+      "screenshots": "Captures d'écran du projet",
+      "demoVideo": "Voir la démo",
+      "projectDetails": "Détails du Projet",
+      "features": "Fonctionnalités",
+      "developmentProcess": "Processus de Développement",
+      "livePreviewSoon": "Le projet en ligne arrive bientôt",
       "items": [
         {
+          "id": "university-management",
           "title": "Système de gestion universitaire",
           "description": "Système de gestion universitaire avec une architecture EJB, modèle DAO, avec trois interfaces utilisateur pour les administrateurs, les enseignants et les étudiants.",
           "tags": ["JavaEE", "Servlet 3.0", "MySQL", "EJB", "Bootstrap 4"],
           "imageUrl": "unimanagementImg",
-          "imageAlt": "Image pour le Système de gestion universitaire"
+          "imageAlt": "Image pour le Système de gestion universitaire",
+          "screenshots": [
+            "/projects/university/screenshot1.jpg",
+            "/projects/university/screenshot2.jpg",
+            "/projects/university/screenshot3.jpg",
+            "/projects/university/dashboard.jpg",
+            "/projects/university/admin-panel.jpg"
+          ],
+          "videoDemo": "/projects/university/demo.mp4",
+          "features": [
+            "Contrôle d'accès basé sur les rôles",
+            "Système de gestion des cours",
+            "Suivi des inscriptions des étudiants",
+            "Interface de gestion des notes",
+            "Tableau de bord administratif"
+          ],
+          "development": [
+            "Collecte des exigences auprès des parties prenantes éducatives",
+            "Conception du schéma de base de données avec MySQL",
+            "Implémentation de l'architecture EJB pour la logique métier",
+            "Création d'une interface utilisateur responsive avec Bootstrap",
+            "Tests rigoureux dans des environnements simulés"
+          ]
         },
         {
+          "id": "digital-banking-platform",
           "title": "Plateforme numérique dans le secteur bancaire",
           "description": "Plateforme de marketing numérique pour les clients bancaires, avec des suggestions de produits et de cartes aux clients en fonction de leurs activités.",
           "tags": ["Angular", "Java", "SpringBoot", "PowerBI", "Angular-Material"],
           "imageUrl": "bfi",
-          "imageAlt": "Image pour la Plateforme numérique dans le secteur bancaire"
+          "imageAlt": "Image pour la Plateforme numérique dans le secteur bancaire",
+          "screenshots": [
+            "/projects/banking/dashboard.jpg",
+            "/projects/banking/analytics.jpg",
+            "/projects/banking/customer-view.jpg",
+            "/projects/banking/marketing-tools.jpg",
+            "/projects/banking/reports.jpg"
+          ],
+          "videoDemo": "/projects/banking/product-demo.mp4",
+          "features": [
+            "Recommandations de produits personnalisées",
+            "Tableau de bord de suivi des activités des clients",
+            "Visualisations de données interactives avec PowerBI",
+            "Système d'authentification sécurisé",
+            "Gestion des campagnes marketing"
+          ],
+          "development": [
+            "Collaboration avec des professionnels bancaires pour les exigences",
+            "Conception d'une architecture de microservices avec Spring Boot",
+            "Implémentation d'une interface utilisateur responsive avec Angular Material",
+            "Intégration de PowerBI pour la visualisation des données",
+            "Réalisation de tests utilisateurs avec les parties prenantes"
+          ]
         },
         {
+          "id": "appointmentease-backend",
           "title": "AppointmentEase Backend",
           "description": "Un système de gestion des rendez-vous sécurisé, facilitant les rendez-vous médecin et patients avec des notifications et des calendriers.",
           "tags": ["Java", "Spring-Boot", "Spring-Security", "Mailtrap"],
           "imageUrl": "aptease",
-          "imageAlt": "Image pour AppointmentEase Backend"
+          "imageAlt": "Image pour AppointmentEase Backend",
+          "screenshots": [
+            "/projects/appointmentease/api-docs.jpg",
+            "/projects/appointmentease/database-schema.jpg",
+            "/projects/appointmentease/security-flow.jpg",
+            "/projects/appointmentease/email-template.jpg",
+            "/projects/appointmentease/architecture.jpg"
+          ],
+          "videoDemo": "/projects/appointmentease/backend-demo.mp4",
+          "features": [
+            "Planification sécurisée des rendez-vous",
+            "Système de notification en temps réel",
+            "Intégrations de calendrier",
+            "Authentification et autorisation des utilisateurs",
+            "Gestion des dossiers médicaux"
+          ],
+          "development": [
+            "Conception d'une architecture API RESTful",
+            "Implémentation d'une authentification sécurisée avec Spring Security",
+            "Création d'un système de notification par email avec Mailtrap",
+            "Optimisation des requêtes de base de données pour les performances",
+            "Déploiement sur une infrastructure cloud"
+          ]
         },
         {
+          "id": "appointmentease-frontend",
           "title": "AppointmentEase Frontend",
           "description": "Un client Front-end pour le système de gestion des rendez-vous réalisé avec Angular 15.",
           "tags": ["Angular", "Angular-Material", "RxJs" ,"Angular-Calendar"],
           "imageUrl": "aptease",
-          "imageAlt": "Image pour AppointmentEase Frontend"
+          "imageAlt": "Image pour AppointmentEase Frontend",
+          "screenshots": [
+            "/projects/appointmentease/login.jpg",
+            "/projects/appointmentease/dashboard.jpg",
+            "/projects/appointmentease/calendar-view.jpg",
+            "/projects/appointmentease/appointment-form.jpg",
+            "/projects/appointmentease/notification-center.jpg"
+          ],
+          "videoDemo": "/projects/appointmentease/frontend-demo.mp4",
+          "features": [
+            "Interface de calendrier interactive",
+            "Design responsive pour tous les appareils",
+            "Mises à jour en temps réel avec RxJs",
+            "Planification intuitive des rendez-vous",
+            "Tableau de bord utilisateur complet"
+          ],
+          "development": [
+            "Création de wireframes et designs UI/UX",
+            "Implémentation de composants responsives avec Angular Material",
+            "Utilisation de RxJs pour la gestion d'état réactive",
+            "Intégration avec l'API backend",
+            "Optimisation pour les performances et l'accessibilité"
+          ]
+        },
+        {
+          "id": "music-label-management",
+          "title": "Système de gestion pour label musical",
+          "description": "Rôle de développeur Front End, participation au développement d'un système de gestion pour une société de production de labels musicaux.",
+          "tags": ["React", "SCSS", "Chartjs", "Zustand"],
+          "imageUrl": "reddiamond",
+          "imageAlt": "Image pour Système de gestion pour label musical",
+          "screenshots": [
+            "/projects/music-label/dashboard.jpg",
+            "/projects/music-label/artist-management.jpg",
+            "/projects/music-label/analytics.jpg",
+            "/projects/music-label/release-calendar.jpg",
+            "/projects/music-label/royalty-tracking.jpg"
+          ],
+          "videoDemo": "/projects/music-label/dashboard-demo.mp4",
+          "features": [
+            "Gestion de portfolio d'artistes",
+            "Planification et suivi des sorties",
+            "Analyse des revenus avec Chart.js",
+            "Système de gestion des contrats",
+            "Intégration des canaux de distribution"
+          ],
+          "development": [
+            "Collaboration avec des professionnels de l'industrie musicale",
+            "Implémentation de la gestion d'état avec Zustand",
+            "Création d'une interface utilisateur responsive avec SCSS",
+            "Construction de visualisations de données interactives avec Chart.js",
+            "Optimisation des performances avec les meilleures pratiques React"
+          ]
+        },
+        {
+          "id": "modern-ecommerce",
+          "title": "Application E-Commerce Moderne",
+          "description": "Application e-commerce Next.js, avec animations Framer Motion et design UI/UX moderne",
+          "tags": ["NextJs", "TailwindCSS", "Framer-Motion", "Zustand", "Stripe", "Strapi CMS"],
+          "imageUrl": "ecommerce",
+          "imageAlt": "Image pour Application E-Commerce Moderne",
+          "screenshots": [
+            "/projects/ecommerce/homepage.jpg",
+            "/projects/ecommerce/product-listing.jpg",
+            "/projects/ecommerce/product-detail.jpg",
+            "/projects/ecommerce/shopping-cart.jpg",
+            "/projects/ecommerce/checkout.jpg"
+          ],
+          "videoDemo": "/projects/ecommerce/shopping-experience.mp4",
+          "features": [
+            "Transitions de produits animées avec Framer Motion",
+            "Design responsive pour tous les appareils",
+            "Traitement sécurisé des paiements avec Stripe",
+            "Gestion de contenu avec Strapi CMS",
+            "Gestion d'état avec Zustand"
+          ],
+          "development": [
+            "Conception UI/UX moderne avec TailwindCSS",
+            "Implémentation du rendu côté serveur avec Next.js",
+            "Création d'animations fluides avec Framer Motion",
+            "Intégration du traitement des paiements avec Stripe",
+            "Construction d'un système de gestion de contenu avec Strapi"
+          ]
         }
       ]
     },
