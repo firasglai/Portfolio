@@ -93,7 +93,7 @@
             "id": "university-management",
             "title": "University Management System",
             "description": "University Management System with EJB architecture, DAO pattern, with three user interfaces for administrators, teachers, and students.",
-            "tags": ["JavaEE", "Servlet 3.0", "MySQL", "EJB", "Bootstrap 4"],
+            "tags": ["JavaEE", "Servlet", "MySQL", "EJB", "Bootstrap 4"],
             "imageUrl": "unimanagementImg",
             "imageAlt": "Image for University Management System",
             "screenshots": [
@@ -213,7 +213,7 @@
             "id": "music-label-management",
             "title": "Music Label Production Management System",
             "description": "Front End Developer role, took part in developing a management system for a music label production company.",
-            "tags": ["React", "SCSS", "Chartjs", "Zustand"],
+            "tags": ["React", "SCSS", "Chartjs", "Zustand", "ReactQuery"],
             "imageUrl": "reddiamond",
             "imageAlt": "Image for Music Label Management System",
             "screenshots": [
@@ -243,7 +243,7 @@
             "id": "modern-ecommerce",
             "title": "Modern E-Commerce Application",
             "description": "Next.js ecommerce app, with Framer Motion animations and modern UI/UX design",
-            "tags": ["NextJs", "TailwindCSS", "Framer-Motion", "Zustand", "Stripe", "Strapi CMS"],
+            "tags": ["NextJs", "TailwindCSS", "Framer-Motion", "Zustand", "Stripe", "Strapi"],
             "imageUrl": "ecommerce",
             "imageAlt": "Image for Modern E-Commerce Application",
             "screenshots": [

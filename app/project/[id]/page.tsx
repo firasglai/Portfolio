@@ -29,7 +29,7 @@ export default function ProjectDetails() {
   const isBrowser = typeof window !== "undefined"
 
   // State to track dark mode
-  const [isDarkMode, setIsDarkMode] = useState(false)
+    const [isDarkMode, setIsDarkMode] = useState(false)
 
   // Update dark mode state based on document class
   useEffect(() => {
@@ -257,24 +257,11 @@ export default function ProjectDetails() {
                 item.name.toLowerCase() === tag.toLowerCase() || 
                 tag.toLowerCase().includes(item.name.toLowerCase())
               );
-              
-              return techItem ? (
+              return (
                 <TechStackItem
                   key={index}
                   name={tag}
-                  url={techItem.url}
-                  icon={techItem.icon}
-                />
-              ) : (
-                <TechStackItem
-                  key={index}
-                  name={tag}
-                  url={`https://www.google.com/search?q=${tag}+documentation`}
-                  icon={
-                    <span className="text-lg font-semibold">
-                      {tag.charAt(0).toUpperCase()}
-                    </span>
-                  }
+                  url={techItem ? techItem.url : `https://www.google.com/search?q=${tag}+documentation`}
                 />
               );
             })}

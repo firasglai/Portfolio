@@ -8,11 +8,18 @@ import clsx from 'clsx';
 import { useActiveSectionContext } from '@/context/active-section-context';
 import { TranslatedLinks } from '@/lib/data';
 import { useTranslation } from 'react-i18next';
-import Hamburger from 'hamburger-react'; 
+import Hamburger from 'hamburger-react';
+import { usePathname } from 'next/navigation';
+
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const { i18n } = useTranslation();
-  const [isOpen, setOpen] = React.useState(false); 
+  const [isOpen, setOpen] = React.useState(false);
+  const pathname = usePathname();
+  // Don't render header on project detail pages
+  if (pathname.startsWith('/project/')) {
+    return null;
+  }
   // TranslatedLinks function to get the translated links
   const translatedLinks = TranslatedLinks(i18n.language);
   return (

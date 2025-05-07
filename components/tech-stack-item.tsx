@@ -1,48 +1,54 @@
 "use client"
 
-import Link from "next/link"
-import { motion } from "framer-motion"
-import type { ReactNode } from "react"
+import { useTheme } from "@/context/theme-context"
+import { stackIconMap } from "@/lib/data"
+import { renderSimpleIcon, fetchSimpleIcons } from "react-icon-cloud"
+import { useEffect, useState } from "react"
 
 interface TechStackItemProps {
   name: string
-  icon: ReactNode
   url: string
 }
 
-export function TechStackItem({ name, icon, url }: TechStackItemProps) {
-  // Check if we're in a browser environment
-  const isBrowser = typeof window !== "undefined"
+export function TechStackItem({ name, url }: TechStackItemProps) {
+  const { theme } = useTheme()
+  const isDarkMode = theme === "dark"
+  const normalized = name.toLowerCase().replace(/[^a-z0-9]/g, "")
+  const stackIconKey = stackIconMap[normalized] || stackIconMap[name.toLowerCase()] || null
 
-  // Safely check for dark mode without requiring the ThemeContext
-  const isDarkMode = isBrowser ? document.documentElement.classList.contains("dark") : false
+  const [iconObj, setIconObj] = useState<any>(null)
+
+  useEffect(() => {
+    if (stackIconKey) {
+      fetchSimpleIcons({ slugs: [stackIconKey] }).then((data) => {
+        if (data && data.simpleIcons && data.simpleIcons[stackIconKey]) {
+          setIconObj(data.simpleIcons[stackIconKey])
+        } else {
+          setIconObj(null)
+        }
+      })
+    }
+  }, [stackIconKey])
+
+  let iconElement = null
+  if (stackIconKey && iconObj) {
+    iconElement = renderSimpleIcon({
+      icon: iconObj,
+      bgHex: isDarkMode ? "#080510" : "#f3f2ef",
+      fallbackHex: isDarkMode ? "#ffffff" : "#6e6e73",
+      minContrastRatio: isDarkMode ? 2 : 1.2,
+      size: 22,
+    })
+  }
 
   return (
-    <motion.div
-      whileHover={{
-        scale: 1.05,
-        backgroundColor: isDarkMode ? "rgba(30, 41, 59, 0.9)" : "rgba(243, 244, 246, 0.8)",
-      }}
-      whileTap={{ scale: 0.98 }}
-      transition={{
-        type: "spring",
-        stiffness: 400,
-        damping: 17,
-      }}
-      className={`flex items-center gap-2 ${
-        isDarkMode ? "bg-gray-800/70" : "bg-white/80"
-      } rounded-lg px-3 py-2 cursor-pointer border ${isDarkMode ? "border-gray-700" : "border-gray-200"}`}
-    >
-      <Link href={url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-        <motion.div
-          className="w-6 h-6 flex items-center justify-center"
-          whileHover={{ rotate: 5 }}
-          transition={{ type: "spring", stiffness: 300 }}
-        >
-          {icon}
-        </motion.div>
+    <div className={`flex items-center gap-2 ${isDarkMode ? "bg-gray-800/70" : "bg-white/80"} rounded-lg px-3 py-2 cursor-pointer border ${isDarkMode ? "border-gray-700" : "border-gray-200"}`}>
+      <a href={url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+        <span className={`w-8 h-8 flex items-center justify-center rounded-full shadow-sm ${isDarkMode ? "bg-gray-900" : "bg-white"}`}>
+          {iconElement || <span className="text-lg font-semibold">{name.charAt(0).toUpperCase()}</span>}
+        </span>
         <span className={`text-xs font-medium ${isDarkMode ? "text-white" : "text-gray-800"}`}>{name}</span>
-      </Link>
-    </motion.div>
+      </a>
+    </div>
   )
 } 

@@ -212,7 +212,7 @@
           "id": "music-label-management",
           "title": "Système de gestion pour label musical",
           "description": "Rôle de développeur Front End, participation au développement d'un système de gestion pour une société de production de labels musicaux.",
-          "tags": ["React", "SCSS", "Chartjs", "Zustand"],
+          "tags": ["React", "SCSS", "Chartjs", "Zustand", "ReactQuery"],
           "imageUrl": "reddiamond",
           "imageAlt": "Image pour Système de gestion pour label musical",
           "screenshots": [
@@ -242,7 +242,7 @@
           "id": "modern-ecommerce",
           "title": "Application E-Commerce Moderne",
           "description": "Application e-commerce Next.js, avec animations Framer Motion et design UI/UX moderne",
-          "tags": ["NextJs", "TailwindCSS", "Framer-Motion", "Zustand", "Stripe", "Strapi CMS"],
+          "tags": ["NextJs", "TailwindCSS", "Framer-Motion", "Zustand", "Stripe", "Strapi"],
           "imageUrl": "ecommerce",
           "imageAlt": "Image pour Application E-Commerce Moderne",
           "screenshots": [
