@@ -93,7 +93,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV.pdf"
+          href={currentLanguage === 'fr' ? '/Firas_Glai_Resume_FR.pdf' : '/Firas_Glai_Resume_EN.pdf'}
           download
         >
          {t('intro.downloadCV')}
