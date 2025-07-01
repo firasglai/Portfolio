@@ -158,6 +158,46 @@ export const projectsData = [
       githubrepo:"https://github.com/firasglai/Clothing-Shop",
       preview:"",
     },
+    {
+      id: "ecoline-web",
+      title: "Ecoline Web",
+      description:
+        "Built a secure video streaming backend with Laravel and Mux, reducing load times by 30% and ensuring content protection. Developed a high-performance React.js client hosted on Vercel, achieving a 92% PageSpeed Insights score and boosting session duration by 25% through lazy loading and dynamic imports. Implemented CI/CD pipelines with GitHub Actions, cutting deployment errors by 40% and accelerating release cycles by 20%.",
+      tags: ["Laravel", "Mux", "React.js", "Vercel", "GitHub Actions"],
+      imageUrl: "",
+      githubrepo: "",
+      preview: "",
+    },
+    {
+      id: "reddiamond-accounting",
+      title: "Reddiamond Accounting (continued)",
+      description:
+        "Designed and deployed an appointment management system using Angular and Spring Boot, reducing scheduling conflicts and improving booking efficiency by 50%. Integrated an interactive calendar with real-time notifications, streamlining user coordination and boosting operational efficiency across departments. Built a full-featured digital marketing platform with Angular (front-end) and Spring Boot (back-end), supporting campaign tracking and performance analytics through Power BI dashboards, enhancing marketing insight and reporting for stakeholders.",
+      tags: ["Angular", "Spring Boot", "Power BI"],
+      imageUrl: "",
+      githubrepo: "",
+      preview: "",
+    },
+    {
+      id: "reddiamond-backstage",
+      title: "Reddiamond Backstage",
+      description:
+        "Architected and developed a modular front-end interface for a music label management platform using React.js, enabling the onboarding of 20+ artists and content managers. Integrated interactive dashboards with Chart.js for real-time analytics on artist performance, streams, and revenue trends, enhancing decision-making efficiency. Optimized front-end performance and usability, resulting in a 30% increase in daily platform usage.",
+      tags: ["React.js", "Chart.js"],
+      imageUrl: "",
+      githubrepo: "",
+      preview: "",
+    },
+    {
+      id: "3s-internships",
+      title: "3S-Internships",
+      description:
+        "Translated Figma designs into interactive, mobile-responsive interfaces using React and Tailwind CSS, reducing design-to-deployment time by 25%. Engineered and deployed backend services with Node.js, Prisma ORM, and MySQL, including a secure authentication system supporting over 1,000 users. Delivered key features such as an interactive Kanban project management tool, a workspace-switching calendar, and real-time video chat functionality between staff and interns/candidates, boosting team coordination and productivity. Contributed to code reviews and implemented CI/CD practices, decreasing page load times by 35% and improving overall system reliability.",
+      tags: ["React", "Tailwind CSS", "Node.js", "Prisma ORM", "MySQL"],
+      imageUrl: "",
+      githubrepo: "",
+      preview: "",
+    }
 ] as const;
 
 //! changed it in Translation File under @locales (Deprecated)

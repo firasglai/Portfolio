@@ -268,6 +268,106 @@
               "Integrated payment processing with Stripe",
               "Built content management system with Strapi"
             ]
+          },
+          {
+            "id": "ecoline-web",
+            "title": "Ecoline Web",
+            "description": "Built a secure video streaming backend with Laravel and Mux, ",
+            "tags": ["Laravel", "Mux", "React.js", "Vercel", "GitHub Actions"],
+            "imageUrl": "ecolineweb",
+            "imageAlt": "Image for Ecoline Web",
+            "screenshots": [
+              "/projects/ecolineweb/screenshot1.jpg",
+              "/projects/ecolineweb/screenshot2.jpg"
+            ],
+            "videoDemo": "/projects/ecolineweb/demo.mp4",
+            "features": [
+              "Secure video streaming backend with Laravel and Mux",
+              "High-performance React.js client hosted on Vercel",
+              "92% PageSpeed Insights score",
+              "Session duration increased by 25%",
+              "CI/CD pipelines with GitHub Actions"
+            ],
+            "development": [
+              "Backend built with Laravel and Mux for secure streaming",
+              "Frontend developed in React.js and deployed on Vercel",
+              "Performance optimization with lazy loading and dynamic imports",
+              "CI/CD automation with GitHub Actions"
+            ]
+          },
+          {
+            "id": "reddiamond-accounting",
+            "title": "Reddiamond Accounting (continued)",
+            "description": "Designed and deployed an appointment management system using Angular and Spring Boot, reducing scheduling conflicts and improving booking efficiency by 50%. Integrated an interactive calendar with real-time notifications, streamlining user coordination and boosting operational efficiency across departments. Built a full-featured digital marketing platform with Angular (front-end) and Spring Boot (back-end), supporting campaign tracking and performance analytics through Power BI dashboards, enhancing marketing insight and reporting for stakeholders.",
+            "tags": ["Angular", "Spring Boot", "Power BI"],
+            "imageUrl": "reddiamondaccounting",
+            "imageAlt": "Image for Reddiamond Accounting",
+            "screenshots": [
+              "/projects/reddiamondaccounting/screenshot1.jpg",
+              "/projects/reddiamondaccounting/screenshot2.jpg"
+            ],
+            "videoDemo": "/projects/reddiamondaccounting/demo.mp4",
+            "features": [
+              "Appointment management system with Angular and Spring Boot",
+              "Interactive calendar with real-time notifications",
+              "Digital marketing platform with campaign tracking",
+              "Performance analytics via Power BI dashboards"
+            ],
+            "development": [
+              "Designed and deployed appointment management system",
+              "Integrated interactive calendar and notifications",
+              "Built digital marketing platform with analytics"
+            ]
+          },
+          {
+            "id": "reddiamond-backstage",
+            "title": "Reddiamond Backstage",
+            "description": "Architected and developed a modular front-end interface for a music label management platform using React.js, enabling the onboarding of 20+ artists and content managers. Integrated interactive dashboards with Chart.js for real-time analytics on artist performance, streams, and revenue trends, enhancing decision-making efficiency. Optimized front-end performance and usability, resulting in a 30% increase in daily platform usage.",
+            "tags": ["React.js", "Chart.js"],
+            "imageUrl": "reddiamondbackstage",
+            "imageAlt": "Image for Reddiamond Backstage",
+            "screenshots": [
+              "/projects/reddiamondbackstage/screenshot1.jpg",
+              "/projects/reddiamondbackstage/screenshot2.jpg"
+            ],
+            "videoDemo": "/projects/reddiamondbackstage/demo.mp4",
+            "features": [
+              "Modular front-end for music label management",
+              "Interactive dashboards with Chart.js",
+              "Real-time analytics on artist performance",
+              "30% increase in daily usage"
+            ],
+            "development": [
+              "Developed modular React.js front-end",
+              "Integrated Chart.js for analytics",
+              "Performance and usability optimization"
+            ]
+          },
+          {
+            "id": "3s-internships",
+            "title": "3S-Internships",
+            "description": "Translated Figma designs into interactive, mobile-responsive interfaces using React and Tailwind CSS, reducing design-to-deployment time by 25%. Engineered and deployed backend services with Node.js, Prisma ORM, and MySQL, including a secure authentication system supporting over 1,000 users. Delivered key features such as an interactive Kanban project management tool, a workspace-switching calendar, and real-time video chat functionality between staff and interns/candidates, boosting team coordination and productivity. Contributed to code reviews and implemented CI/CD practices, decreasing page load times by 35% and improving overall system reliability.",
+            "tags": ["React", "Tailwind CSS", "Node.js", "Prisma ORM", "MySQL"],
+            "imageUrl": "3sinternships",
+            "imageAlt": "Image for 3S-Internships",
+            "screenshots": [
+              "/projects/3sinternships/screenshot1.jpg",
+              "/projects/3sinternships/screenshot2.jpg"
+            ],
+            "videoDemo": "/projects/3sinternships/demo.mp4",
+            "features": [
+              "Mobile-responsive React and Tailwind CSS UI",
+              "Backend with Node.js, Prisma ORM, and MySQL",
+              "Secure authentication for 1,000+ users",
+              "Kanban project management tool",
+              "Workspace calendar and real-time video chat"
+            ],
+            "development": [
+              "Translated Figma to React/Tailwind UI",
+              "Engineered backend with Node.js/Prisma/MySQL",
+              "Implemented Kanban, calendar, and video chat",
+              "CI/CD and code review improvements"
+            ]
           }
         ]
       },
