@@ -5,11 +5,20 @@ import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { useTranslation } from 'react-i18next';
+import { MDXRemote } from 'next-mdx-remote';
+import type { MDXRemoteSerializeResult } from 'next-mdx-remote';
 
-export default function About() {
-  const { t , i18n} = useTranslation();
+interface AboutProps {
+  content: {
+    frontmatter: any;
+    serializedContent: MDXRemoteSerializeResult;
+  };
+}
+
+export default function About({ content }: AboutProps) {
+  const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language;
-  const { ref } = useSectionInView(currentLanguage === 'fr' ? 'propos' : 'About',);
+  const { ref } = useSectionInView(currentLanguage === 'fr' ? 'propos' : 'About');
 
   return (
     <motion.section
@@ -20,23 +29,13 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading> {t('About.title')}</SectionHeading>
-      <p className="mb-3">
-       {t('About.begin')}  {" "}
-        <span className="font-medium">{t('About.par1')} </span> {t('About.par2')} {" "}
-        <span className="font-medium">{t('About.par3')} </span>.{" "}
-        <span className="italic">{t('About.par4')} </span>
-        <span className="italic">{t('About.par5')} </span>
-        {" "}
-        <span className="font-medium">
-          Angular, SpringBoot, Node.js, MySQL and MongoDB,
-        </span>
-        {" "}  {t('About.par6')} 
-      </p>
-
-      <p>
-      {t('About.end')} 
-      </p>
+      <SectionHeading>
+        {content.frontmatter.title}
+      </SectionHeading>
+      
+      <div className="prose prose-lg max-w-none text-gray-700 dark:text-gray-300">
+        <MDXRemote {...content.serializedContent} />
+      </div>
     </motion.section>
   );
 }
