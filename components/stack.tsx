@@ -6,6 +6,8 @@ const slugs = [
   "javascript",
   "java",
   "react",
+  "reactnative",
+  "expo",
   "angular",
   "springboot",
   "threedotjs",

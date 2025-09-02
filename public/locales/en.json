@@ -1,25 +1,21 @@
 {
     "intro": {
-        "greeting": "Hello, I'm Firas",
-        "desc1": "I'm a lifelong learner and a passionate",
-        "desc2": "Full Stack Developer,",
-        "desc3":"specialised in building",
-        "desc4":"seamless digital experiences,",
-        "desc5":"eager to take on new challenges that align with my career ambitions, Let's build something amazing together!",
+        "greeting": "Hello, I'm Firas,",
+        "desc1": " a Full-stack engineer specializing in web and mobile development,",
+        "desc2": " with a strong passion for building clean,",
+        "desc3": " AI-powered applications that solve real problems.",
+        "desc4": " Always striving to blend",
+        "desc5": " robust engineering with innovative solutions.",
         "downloadCV": "Download CV",
         "contactMe": "Contact Me Here"
       },
 
       "About":{
         "title":"About me",
-        "begin":"After graduating with a",
-        "par1":"computer systems and software degree, ",
-        "par2":"I decided to pursue my passion for programming. I enrolled in software enginnering studies while pursuing to learn ",
-        "par3":"full-stack web development",
-        "par4":"My favorite part of programming is the problem-solving aspect. ",
-        "par5":"I love the feeling of finally figuring out a solution to a problem, My core stack is ",
-        "par6":"I am also familiar with TypeScript with React and NextJS . I am always looking to learn new technologies. I am currently looking for a full-time position as a software developer. ",
-        "end":"when i'm not coding I enjoy playing video games, camping, and traveling. I also enjoy learning new things I am currently learning how to play chess , "
+        "par1":"I studied computer systems and software, then dove right into the world of programming—and I've loved it ever since (well, apart from a few bug battles and snack emergencies). I started with basic coding, but quickly wanted to learn it all, so I set out to master full-stack development. Why choose one specialty when learning more is just so much fun?",
+        "par2":"Solving problems is honestly my favorite thing; there's something great about finally fixing a tough bug or making something work just right. I'm always curious and love trying out new technologies—even if it means chasing the latest trends like my code chases missing commas.",
+        "par3":"When I'm not diving in code, you'll find me diving in a swim, camping, or traveling—usually looking for good Wi-Fi and a bit of adventure. My goal is to become a multispecialist—kind of like a Swiss Army knife, but for software.",
+        "par4":"Right now, I'm looking for a full-time developer role where I can bring plenty of code, creativity, and a sense of humor to the team."
       }, 
 
 
@@ -27,24 +23,24 @@
         "main": "My Education",
         "items": [
           {
-            "title": "Bachelor Degree",
-            "location": "Bach Hamba college , Bizerte",
-            "description": "I graduated with a bachlor degree in computer science.",
+            "title": "High School Degree",
+            "location": "Bach Hamba college, Bizerte",
+            "description": "I graduated with a bachelor degree in computer science.",
             "date": "2017",
             "icon": "LuGraduationCap"
           },
           {
             "title": "Computer Science Degree",
             "location": "Carthage University, ISSAT Mateur",
-            "description": "I graduated after 3 years of studying. Then, I tried freelancing for a year.",
+            "description": "I graduated after 3 years of studying. Then, I tried freelancing.",
             "date": "2020",
             "icon": "PiCertificateBold"
           },
           {
             "title": "Software Engineering Degree",
             "location": "Polytech Intl, Rue du Lac d'Annecy Tunis",
-            "description": "Currently studying for a software engineering degree, while working on side projects to enhance skills.",
-            "date": "2021 - Present",
+            "description": "I graduated as a Software Engineer.",
+            "date": "2021 - 2025",
             "icon": "PiStudent"
           }
         ]
@@ -53,10 +49,24 @@
         "main": "My Experience",
         "items": [
           {
-            "title": "End of Year Internship",
-            "location": "BFI Groupe, Lac Tunis",
-            "description": "I worked on a digital marketing platform for 6 months with Angular, Spring Boot, and Power BI. From there, I upskilled to full stack.",
-            "date": "01/01/2020 - 30/06/2020",
+            "title": "Fullstack Engineer",
+            "location": "Growth Fusion - Ecoline, Bizerte",
+            "description": "Fullstack engineer developing cross-platform applications across web, iOS, and Android. Leading development using React for web frontend, React Native Expo for mobile apps, and Laravel for backend services, ensuring seamless user experiences across all platforms.",
+            "date": "10/2024 - Present",
+            "icon": "CgWorkAlt"
+          },
+          {
+            "title": "Fullstack Developer - Team Lead",
+            "location": "3S Spring Services & Solutions, Ariana",
+            "description": "Led a team of 2 developers in building a comprehensive internship management web platform. Managed full-stack development from database design to frontend implementation, coordinating team efforts and ensuring project delivery milestones.",
+            "date": "02/2024 - 08/2024",
+            "icon": "CgWorkAlt"
+          },
+          {
+            "title": "Frontend Developer",
+            "location": "Red-Diamond",
+            "description": "Freelance Front End Developper role, took part in developping a management system for a music label production company.",
+            "date": "12/2023 - 04/2024",
             "icon": "CgWorkAlt"
           },
           {
@@ -67,10 +77,10 @@
             "icon": "CgWorkAlt"
           },
           {
-            "title": "Frontend Developer",
-            "location": "Red-Diamond",
-            "description": "Freelance Front End Developper role, took part in developping a management system for a music label production company.",
-            "date": "12/2023 - 04/2024",
+            "title": "End of Year Internship",
+            "location": "BFI Groupe, Lac Tunis",
+            "description": "I worked on a digital marketing platform for 6 months with Angular, Spring Boot, and Power BI. From there, I upskilled to full stack.",
+            "date": "01/01/2020 - 30/06/2020",
             "icon": "CgWorkAlt"
           }
         ]
@@ -89,6 +99,134 @@
         "developmentProcess": "Development Process",
         "livePreviewSoon": "Live Project is coming soon",
         "items": [
+          {
+            "id": "ecoline-mobile",
+            "title": "Ecoline Mobile",
+            "description": "Mobile client for the Ecoline backend built with Expo React Native. Features video streaming with expo-video integration, secure payment processing and subscription management, AI-powered chat functionality, and comprehensive progress tracking.",
+            "tags": ["React Native", "Expo", "expo-video", "AI Chat", "Progress Tracking"],
+            "imageUrl": "ecolinemobile",
+            "imageAlt": "Image for Ecoline Mobile",
+            "screenshots": [
+              "/projects/ecolinemobile/screenshot1.jpg",
+              "/projects/ecolinemobile/screenshot2.jpg"
+            ],
+            "videoDemo": "/projects/ecolinemobile/demo.mp4",
+            "features": [
+              "Video streaming with expo-video integration",
+              "Secure payment processing and subscriptions",
+              "AI-powered chat functionality",
+              "Comprehensive progress tracking",
+              "Cross-platform mobile compatibility"
+            ],
+            "development": [
+              "Built with Expo React Native for cross-platform development",
+              "Integrated expo-video for seamless video streaming",
+              "Implemented Stripe for secure payment processing",
+              "Added AI chat functionality for user assistance",
+              "Developed progress tracking system for user engagement"
+            ]
+          },
+          {
+            "id": "ecoline-web",
+            "title": "Ecoline Web",
+            "description": "Secure video streaming platform with Laravel backend featuring OAuth authentication and Mux integration. High-performance React.js client with SCSS styling and TanStack Query, achieving 92% PageSpeed Insights score and improved user engagement.",
+            "tags": ["Laravel", "OAuth", "Mux", "React.js", "SCSS", "TanStack Query", "Vercel", "GitHub Actions"],
+            "imageUrl": "ecolineweb",
+            "imageAlt": "Image for Ecoline Web",
+            "screenshots": [
+              "/projects/ecolineweb/screenshot1.jpg",
+              "/projects/ecolineweb/screenshot2.jpg"
+            ],
+            "videoDemo": "/projects/ecolineweb/demo.mp4",
+            "features": [
+              "Secure video streaming backend with Laravel and Mux",
+              "High-performance React.js client hosted on Vercel",
+              "92% PageSpeed Insights score",
+              "Session duration increased by 25%",
+              "CI/CD pipelines with GitHub Actions"
+            ],
+            "development": [
+              "Backend built with Laravel and Mux for secure streaming",
+              "Frontend developed in React.js and deployed on Vercel",
+              "Performance optimization with lazy loading and dynamic imports",
+              "CI/CD automation with GitHub Actions"
+            ]
+          },
+          {
+            "id": "3s-internships",
+            "title": "3S-Internships",
+            "description": "An Internship management system with Node.js/Express/Prisma for the backend and React/Tailwind/Zustand for the frontend. Features include secure authentication, interactive Kanban project management, workspace calendar, and real-time video chat functionality between staff and interns/candidates.",
+            "tags": ["React", "Tailwind CSS", "Node.js", "Express", "Prisma", "Zustand"],
+            "imageUrl": "threesmockup",
+            "imageAlt": "Image for 3S-Internships",
+            "screenshots": [
+              "/projects/3sinternships/screenshot1.jpg",
+              "/projects/3sinternships/screenshot2.jpg"
+            ],
+            "videoDemo": "/projects/3sinternships/demo.mp4",
+            "features": [
+              "Mobile-responsive React and Tailwind CSS UI",
+              "Backend with Node.js, Prisma ORM, and MySQL",
+              "Secure authentication for 1,000+ users",
+              "Kanban project management tool",
+              "Workspace calendar and real-time video chat"
+            ],
+            "development": [
+              "Translated Figma to React/Tailwind UI",
+              "Engineered backend with Node.js/Prisma/MySQL",
+              "Implemented Kanban, calendar, and video chat",
+              "CI/CD and code review improvements"
+            ]
+          },
+          
+          {
+            "id": "reddiamond-backstage",
+            "title": "RedDiamond Backstage",
+            "description": "A modular music label management platform enabling onboarding of 20+ artists and content managers. Features interactive dashboards with real-time analytics on artist performance, streams, and revenue trends, resulting in 30% increased daily platform usage.",
+            "tags": ["React", "SCSS", "Chart.js", "Zustand", "TanStack Query"],
+            "imageUrl": "reddiamond",
+            "imageAlt": "Image for RedDiamond Backstage",
+            "screenshots": [
+              "/projects/reddiamondbackstage/screenshot1.jpg",
+              "/projects/reddiamondbackstage/screenshot2.jpg"
+            ],
+            "videoDemo": "/projects/reddiamondbackstage/demo.mp4",
+            "features": [
+              "Modular front-end for music label management",
+              "Interactive dashboards with Chart.js",
+              "Real-time analytics on artist performance",
+              "30% increase in daily usage"
+            ],
+            "development": [
+              "Developed modular React.js front-end",
+              "Integrated Chart.js for analytics",
+              "Performance and usability optimization"
+            ]
+          },
+          {
+            "id": "reddiamond-accounting",
+            "title": "Reddiamond Accounting ",
+            "description": "A comprehensive financial management platform for invoice generation, modification, and analytics. Designed automated accounting workflows that reduced manual input errors by 40% and streamlined financial operations for improved business efficiency.",
+            "tags": ["React.js", "SCSS", "Chart.js", "reactPdf", "TanStack Query"],
+            "imageUrl": "redaccounting",
+            "imageAlt": "Image for Reddiamond Accounting",
+            "screenshots": [
+              "/projects/reddiamondaccounting/screenshot1.jpg",
+              "/projects/reddiamondaccounting/screenshot2.jpg"
+            ],
+            "videoDemo": "/projects/reddiamondaccounting/demo.mp4",
+            "features": [
+              "Appointment management system with Angular and Spring Boot",
+              "Interactive calendar with real-time notifications",
+              "Digital marketing platform with campaign tracking",
+              "Performance analytics via Power BI dashboards"
+            ],
+            "development": [
+              "Designed and deployed appointment management system",
+              "Integrated interactive calendar and notifications",
+              "Built digital marketing platform with analytics"
+            ]
+          },
           {
             "id": "university-management",
             "title": "University Management System",
@@ -211,11 +349,11 @@
           },
           {
             "id": "music-label-management",
-            "title": "Music Label Production Management System",
+            "title": "RedDiamond Backstage",
             "description": "Front End Developer role, took part in developing a management system for a music label production company.",
             "tags": ["React", "SCSS", "Chartjs", "Zustand", "ReactQuery"],
             "imageUrl": "reddiamond",
-            "imageAlt": "Image for Music Label Management System",
+            "imageAlt": "Image for RedDiamond Backstage",
             "screenshots": [
               "/projects/music-label/dashboard.jpg",
               "/projects/music-label/artist-management.jpg",
@@ -267,106 +405,6 @@
               "Created smooth animations with Framer Motion",
               "Integrated payment processing with Stripe",
               "Built content management system with Strapi"
-            ]
-          },
-          {
-            "id": "ecoline-web",
-            "title": "Ecoline Web",
-            "description": "Built a secure video streaming backend with Laravel and Mux, ",
-            "tags": ["Laravel", "Mux", "React.js", "Vercel", "GitHub Actions"],
-            "imageUrl": "ecolineweb",
-            "imageAlt": "Image for Ecoline Web",
-            "screenshots": [
-              "/projects/ecolineweb/screenshot1.jpg",
-              "/projects/ecolineweb/screenshot2.jpg"
-            ],
-            "videoDemo": "/projects/ecolineweb/demo.mp4",
-            "features": [
-              "Secure video streaming backend with Laravel and Mux",
-              "High-performance React.js client hosted on Vercel",
-              "92% PageSpeed Insights score",
-              "Session duration increased by 25%",
-              "CI/CD pipelines with GitHub Actions"
-            ],
-            "development": [
-              "Backend built with Laravel and Mux for secure streaming",
-              "Frontend developed in React.js and deployed on Vercel",
-              "Performance optimization with lazy loading and dynamic imports",
-              "CI/CD automation with GitHub Actions"
-            ]
-          },
-          {
-            "id": "reddiamond-accounting",
-            "title": "Reddiamond Accounting (continued)",
-            "description": "Designed and deployed an appointment management system using Angular and Spring Boot, reducing scheduling conflicts and improving booking efficiency by 50%. Integrated an interactive calendar with real-time notifications, streamlining user coordination and boosting operational efficiency across departments. Built a full-featured digital marketing platform with Angular (front-end) and Spring Boot (back-end), supporting campaign tracking and performance analytics through Power BI dashboards, enhancing marketing insight and reporting for stakeholders.",
-            "tags": ["Angular", "Spring Boot", "Power BI"],
-            "imageUrl": "reddiamondaccounting",
-            "imageAlt": "Image for Reddiamond Accounting",
-            "screenshots": [
-              "/projects/reddiamondaccounting/screenshot1.jpg",
-              "/projects/reddiamondaccounting/screenshot2.jpg"
-            ],
-            "videoDemo": "/projects/reddiamondaccounting/demo.mp4",
-            "features": [
-              "Appointment management system with Angular and Spring Boot",
-              "Interactive calendar with real-time notifications",
-              "Digital marketing platform with campaign tracking",
-              "Performance analytics via Power BI dashboards"
-            ],
-            "development": [
-              "Designed and deployed appointment management system",
-              "Integrated interactive calendar and notifications",
-              "Built digital marketing platform with analytics"
-            ]
-          },
-          {
-            "id": "reddiamond-backstage",
-            "title": "Reddiamond Backstage",
-            "description": "Architected and developed a modular front-end interface for a music label management platform using React.js, enabling the onboarding of 20+ artists and content managers. Integrated interactive dashboards with Chart.js for real-time analytics on artist performance, streams, and revenue trends, enhancing decision-making efficiency. Optimized front-end performance and usability, resulting in a 30% increase in daily platform usage.",
-            "tags": ["React.js", "Chart.js"],
-            "imageUrl": "reddiamondbackstage",
-            "imageAlt": "Image for Reddiamond Backstage",
-            "screenshots": [
-              "/projects/reddiamondbackstage/screenshot1.jpg",
-              "/projects/reddiamondbackstage/screenshot2.jpg"
-            ],
-            "videoDemo": "/projects/reddiamondbackstage/demo.mp4",
-            "features": [
-              "Modular front-end for music label management",
-              "Interactive dashboards with Chart.js",
-              "Real-time analytics on artist performance",
-              "30% increase in daily usage"
-            ],
-            "development": [
-              "Developed modular React.js front-end",
-              "Integrated Chart.js for analytics",
-              "Performance and usability optimization"
-            ]
-          },
-          {
-            "id": "3s-internships",
-            "title": "3S-Internships",
-            "description": "Translated Figma designs into interactive, mobile-responsive interfaces using React and Tailwind CSS, reducing design-to-deployment time by 25%. Engineered and deployed backend services with Node.js, Prisma ORM, and MySQL, including a secure authentication system supporting over 1,000 users. Delivered key features such as an interactive Kanban project management tool, a workspace-switching calendar, and real-time video chat functionality between staff and interns/candidates, boosting team coordination and productivity. Contributed to code reviews and implemented CI/CD practices, decreasing page load times by 35% and improving overall system reliability.",
-            "tags": ["React", "Tailwind CSS", "Node.js", "Prisma ORM", "MySQL"],
-            "imageUrl": "3sinternships",
-            "imageAlt": "Image for 3S-Internships",
-            "screenshots": [
-              "/projects/3sinternships/screenshot1.jpg",
-              "/projects/3sinternships/screenshot2.jpg"
-            ],
-            "videoDemo": "/projects/3sinternships/demo.mp4",
-            "features": [
-              "Mobile-responsive React and Tailwind CSS UI",
-              "Backend with Node.js, Prisma ORM, and MySQL",
-              "Secure authentication for 1,000+ users",
-              "Kanban project management tool",
-              "Workspace calendar and real-time video chat"
-            ],
-            "development": [
-              "Translated Figma to React/Tailwind UI",
-              "Engineered backend with Node.js/Prisma/MySQL",
-              "Implemented Kanban, calendar, and video chat",
-              "CI/CD and code review improvements"
             ]
           }
         ]

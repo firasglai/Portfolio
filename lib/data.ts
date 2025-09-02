@@ -5,6 +5,11 @@ import { LuGraduationCap } from "react-icons/lu";
 
 import unimanagementImg from "@/public/UniManag.png";
 import aptease from "@/public/aptease.png";
+import ecolineMobile from "@/public/ecoline-mobile.png";
+import ecolineWeb from "@/public/ecoline-web-mockup.png";
+import redAccounting from "@/public/red-accounting.png";
+import redDiamond from "@/public/RedDiamond.png";
+import threeSMockup from "@/public/3s-mockup.png";
 
 import bfi from "@/public/bfilogin.png";
 import uniImg from "@/public/registerUni.png";
@@ -30,6 +35,11 @@ export const imageMapping = {
   unimanagementImg: require("@/public/UniManag.png"),
   bfi: require("@/public/bfilogin.png"),
   aptease: require("@/public/aptease.png"),
+  ecolinemobile: require("@/public/ecoline-mobile.png"),
+  ecolineweb: require("@/public/ecoline-web-mockup.png"),
+  redaccounting: require("@/public/red-accounting.png"),
+  reddiamond: require("@/public/RedDiamond.png"),
+  threesmockup: require("@/public/3s-mockup.png"),
   // Add other images here
 } as const;
 
@@ -99,6 +109,56 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    id: "ecoline-mobile",
+    title: "Ecoline Mobile",
+    description:
+      "Mobile client for the Ecoline backend built with Expo React Native. Features video streaming with expo-video integration for seamless content consumption, secure payment processing and subscription management, AI-powered chat functionality for personalized learning assistance, and comprehensive progress tracking to monitor user engagement and learning outcomes.",
+    tags: ["React Native", "Expo", "expo-video", "Stripe", "AI Chat", "Progress Tracking"],
+    imageUrl: ecolineMobile,
+    githubrepo: "",
+    preview: "",
+  },
+  {
+    id: "ecoline-web",
+    title: "Ecoline Web",
+    description:
+      "Secure video streaming platform with Laravel backend featuring OAuth authentication and Mux integration. High-performance React.js client with SCSS styling and TanStack Query, achieving 92% PageSpeed Insights score and improved user engagement.",
+    tags: ["Laravel", "OAuth", "Mux", "React.js", "SCSS", "TanStack Query", "Vercel", "GitHub Actions"],
+    imageUrl: ecolineWeb,
+    githubrepo: "",
+    preview: "",
+  },
+  {
+    id: "3s-internships",
+    title: "3S-Internships",
+    description:
+      "An Internship management system with Node.js/Express/Prisma for the backend and React/Tailwind/Zustand for the frontend. Features include secure authentication, interactive Kanban project management, workspace calendar, and real-time video chat functionality between staff and interns/candidates.",
+    tags: ["React", "Tailwind CSS", "Node.js", "Express", "Prisma", "Zustand"],
+    imageUrl: threeSMockup,
+    githubrepo: "",
+    preview: "",
+  },
+  {
+    id: "reddiamond-accounting",
+    title: "Reddiamond Accounting",
+    description:
+      "A comprehensive financial management platform for invoice generation, modification, and analytics. Designed automated accounting workflows that reduced manual input errors by 40% and streamlined financial operations for improved business efficiency.",
+    tags: ["React.js", "SCSS", "Chart.js", "reactPdf", "TanStack Query"],
+    imageUrl: redAccounting,
+    githubrepo: "",
+    preview: "",
+  },
+  {
+    id: "reddiamond-backstage",
+    title: "RedDiamond Backstge",
+    description:
+      "A modular music label management platform enabling onboarding of 20+ artists and content managers. Features interactive dashboards with real-time analytics on artist performance, streams, and revenue trends, resulting in 30% increased daily platform usage.",
+    tags: ["React", "SCSS", "Chart.js", "Zustand", "TanStack Query"],
+    imageUrl: redDiamond,
+    githubrepo: "",
+    preview: "",
+  },
+  {
     id: "university-management",
     title: "University Management System",
     description:
@@ -138,16 +198,16 @@ export const projectsData = [
       githubrepo:"https://github.com/firasglai/Angular_Hospital",
       preview:"",
     },
-    {
-      id: "music-label-management",
-      title: "Music Label Production Management System",
-      description:
-        "Front End Developper role, took part in developping a management system for a music label production company.",
-      tags: ["React", "SCSS", "Chartjs" ,"Zustand" ],
-      imageUrl: reddiamond,
-      githubrepo:"https://github.com/firasglai/Red-Front",
-      preview:"",
-    },
+    // {
+    //   id: "music-label-management",
+    //   title: "RedDiamond Backstage",
+    //   description:
+    //     "Front End Developper role, took part in developping a management system for a music label production company.",
+    //   tags: ["React", "SCSS", "Chartjs" ,"Zustand" ],
+    //   imageUrl: reddiamond,
+    //   githubrepo:"https://github.com/firasglai/Red-Front",
+    //   preview:"",
+    // },
     {
       id: "modern-ecommerce",
       title: "Modern E-Commerce Application",
@@ -157,46 +217,6 @@ export const projectsData = [
       imageUrl: ecommerce,
       githubrepo:"https://github.com/firasglai/Clothing-Shop",
       preview:"",
-    },
-    {
-      id: "ecoline-web",
-      title: "Ecoline Web",
-      description:
-        "Built a secure video streaming backend with Laravel and Mux, reducing load times by 30% and ensuring content protection. Developed a high-performance React.js client hosted on Vercel, achieving a 92% PageSpeed Insights score and boosting session duration by 25% through lazy loading and dynamic imports. Implemented CI/CD pipelines with GitHub Actions, cutting deployment errors by 40% and accelerating release cycles by 20%.",
-      tags: ["Laravel", "Mux", "React.js", "Vercel", "GitHub Actions"],
-      imageUrl: "",
-      githubrepo: "",
-      preview: "",
-    },
-    {
-      id: "reddiamond-accounting",
-      title: "Reddiamond Accounting (continued)",
-      description:
-        "Designed and deployed an appointment management system using Angular and Spring Boot, reducing scheduling conflicts and improving booking efficiency by 50%. Integrated an interactive calendar with real-time notifications, streamlining user coordination and boosting operational efficiency across departments. Built a full-featured digital marketing platform with Angular (front-end) and Spring Boot (back-end), supporting campaign tracking and performance analytics through Power BI dashboards, enhancing marketing insight and reporting for stakeholders.",
-      tags: ["Angular", "Spring Boot", "Power BI"],
-      imageUrl: "",
-      githubrepo: "",
-      preview: "",
-    },
-    {
-      id: "reddiamond-backstage",
-      title: "Reddiamond Backstage",
-      description:
-        "Architected and developed a modular front-end interface for a music label management platform using React.js, enabling the onboarding of 20+ artists and content managers. Integrated interactive dashboards with Chart.js for real-time analytics on artist performance, streams, and revenue trends, enhancing decision-making efficiency. Optimized front-end performance and usability, resulting in a 30% increase in daily platform usage.",
-      tags: ["React.js", "Chart.js"],
-      imageUrl: "",
-      githubrepo: "",
-      preview: "",
-    },
-    {
-      id: "3s-internships",
-      title: "3S-Internships",
-      description:
-        "Translated Figma designs into interactive, mobile-responsive interfaces using React and Tailwind CSS, reducing design-to-deployment time by 25%. Engineered and deployed backend services with Node.js, Prisma ORM, and MySQL, including a secure authentication system supporting over 1,000 users. Delivered key features such as an interactive Kanban project management tool, a workspace-switching calendar, and real-time video chat functionality between staff and interns/candidates, boosting team coordination and productivity. Contributed to code reviews and implemented CI/CD practices, decreasing page load times by 35% and improving overall system reliability.",
-      tags: ["React", "Tailwind CSS", "Node.js", "Prisma ORM", "MySQL"],
-      imageUrl: "",
-      githubrepo: "",
-      preview: "",
     }
 ] as const;
 
@@ -235,7 +255,9 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "React",
-  "Redux",
+  "React Native",
+  "Expo",
+  "Zustand",
   "Next.js",
   "Express.js",
   "Node.js",
@@ -244,15 +266,15 @@ export const skillsData = [
   "Java",
   "SpringBoot",
   "Angular",
+  "PHP",
+  "Laravel",
   "RestAPI",
-  "SOAP",
   "MySQL",
   "MongoDB",
   "Docker",
-  "Jenkins",
+  "GitHub Actions",
   "RabitMQ",
   "Framer Motion",
-  "Three.js",
 ] as const;
 
 // Map various tag names to the correct StackIcon name for react-icon-cloud

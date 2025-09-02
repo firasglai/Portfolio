@@ -11,6 +11,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import profileImg from "@/public/main.jpg";
 import newImg from "@/public/portfolio_new_main.jpg"; 
+import head from '@/public/head-best.png';
 import { useTranslation } from 'react-i18next';
 export default function Intro() {
   const { t, i18n } = useTranslation();;
@@ -35,13 +36,13 @@ export default function Intro() {
             }}
           >
             <Image
-              src={newImg}
+              src={head}
               alt="Firas portrait"
               width="192"
               height="192"
               quality="100"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.20rem] border-white shadow-xl"
+              className="h-21 w-24 rounded-full object-cover border-[0.17rem] border-white shadow-xl"
             />
           </motion.div>
 
@@ -66,9 +67,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">{t('intro.greeting')}</span> {t('intro.desc1')} {" "}
-        <span className="font-bold">{t('intro.desc2')}</span> 
-        {t('intro.desc5')}{" "} 
+        <span className="font-bold">{t('intro.greeting')}</span> {t('intro.desc1')} {t('intro.desc2')} {t('intro.desc3')} {t('intro.desc4')} {t('intro.desc5')}
       </motion.h1>
 
       <motion.div
