@@ -8,12 +8,11 @@ import aptease from "@/public/aptease.png";
 import ecolineMobile from "@/public/ecoline-mobile.png";
 import ecolineWeb from "@/public/ecoline-web-mockup.png";
 import redAccounting from "@/public/red-accounting.png";
-import redDiamond from "@/public/RedDiamond.png";
+import redDiamond from "@/public/redDiamond.png";
 import threeSMockup from "@/public/3s-mockup.png";
 
 import bfi from "@/public/bfilogin.png";
 import uniImg from "@/public/registerUni.png";
-import reddiamond from "@/public/redDiamond.png";
 import ecommerce from "@/public/home.png";
 import {PiStudent,PiCertificateBold} from "react-icons/pi";
 import {BsBook} from "react-icons/bs";
