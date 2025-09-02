@@ -9,9 +9,9 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import profileImg from "@/public/main.jpg";
-import newImg from "@/public/portfolio_new_main.jpg"; 
-import head from '@/public/head-best.png';
+// import profileImg from "@/public/main.jpg";
+// import newImg from "@/public/portfolio_new_main.jpg"; 
+import head from '@/public/headv1.png';
 import { useTranslation } from 'react-i18next';
 export default function Intro() {
   const { t, i18n } = useTranslation();;
