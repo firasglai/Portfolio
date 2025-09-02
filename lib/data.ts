@@ -37,7 +37,7 @@ export const imageMapping = {
   ecolinemobile: require("@/public/ecoline-mobile.png"),
   ecolineweb: require("@/public/ecoline-web-mockup.png"),
   redaccounting: require("@/public/red-accounting.png"),
-  reddiamond: require("@/public/RedDiamond.png"),
+  reddiamond: require("@/public/redDiamond.png"),
   threesmockup: require("@/public/3s-mockup.png"),
   // Add other images here
 } as const;
