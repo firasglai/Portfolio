@@ -22,20 +22,19 @@ export default function About() {
     >
       <SectionHeading> {t('About.title')}</SectionHeading>
       <p className="mb-3">
-       {t('About.begin')}  {" "}
-        <span className="font-medium">{t('About.par1')} </span> {t('About.par2')} {" "}
-        <span className="font-medium">{t('About.par3')} </span>.{" "}
-        <span className="italic">{t('About.par4')} </span>
-        <span className="italic">{t('About.par5')} </span>
-        {" "}
-        <span className="font-medium">
-          Angular, SpringBoot, Node.js, MySQL and MongoDB,
-        </span>
-        {" "}  {t('About.par6')} 
+        {t('About.par1')}
+      </p>
+      
+      <p className="mb-3">
+        {t('About.par2')}
+      </p>
+      
+      <p className="mb-3">
+        {t('About.par3')}
       </p>
 
       <p>
-      {t('About.end')} 
+        {t('About.par4')}
       </p>
     </motion.section>
   );

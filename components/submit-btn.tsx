@@ -1,10 +1,12 @@
 import React from "react";
 import { FaPaperPlane } from "react-icons/fa";
-import { experimental_useFormStatus as useFormStatus } from "react-dom";
+import { useFormStatus } from "react-dom";
 import { useTranslation } from 'react-i18next';
+
 export default function SubmitBtn() {
   const { pending } = useFormStatus();
   const { t } = useTranslation();
+  
   return (
     <button
       type="submit"

@@ -1,48 +1,44 @@
 {
     "intro": {
-      "greeting": "Bonjour, je m'appelle Firas.",
-      "desc1": "Je suis un apprenant passionné et un",
-      "desc2": "Développeur Full Stack ,",
-      "desc3": "spécialisé dans la construction",
-      "desc4": "d'expériences numériques fluides,",
-      "desc5": "désireux de relever de nouveaux défis qui correspondent à mes ambitions professionnelles. Construisons quelque chose d'extraordinaire ensemble !",
+      "greeting": "Bonjour, je m'appelle Firas,",
+      "desc1": " un ingénieur Full-stack spécialisé dans le développement web et mobile,",
+      "desc2": " avec une forte passion pour créer des applications",
+      "desc3": " propres et alimentées par l'IA qui résolvent de vrais problèmes.",
+      "desc4": " Toujours en quête d'allier",
+      "desc5": " ingénierie robuste et solutions innovantes.",
       "downloadCV": "Télécharger le CV",
       "contactMe": "Contactez-moi ici"
     },
   
     "About": {
       "title":"À propos de moi",
-      "begin": "Après avoir obtenu un diplôme en",
-      "par1": "systèmes informatiques et logiciels,",
-      "par2": "j'ai décidé de poursuivre ma passion pour la programmation. J'ai suivi des études en ingénierie logicielle et j'ai continué à apprendre",
-      "par3": " le développement web full-stack,",
-      "par4": "Ma partie préférée de la programmation est l'aspect résolution de problèmes.",
-      "par5": "J'adore la sensation de finalement trouver une solution à un problème. Ma pile technologique de base est",
-      "par6": "Je suis également familier avec TypeScript avec React et NextJS. Je suis toujours prêt à apprendre de nouvelles technologies. Je recherche actuellement un poste de développeur logiciel à temps plein.",
-      "end": "Quand je ne code pas, j'aime jouer à des jeux vidéo, faire du camping et voyager. J'aime aussi apprendre de nouvelles choses. En ce moment, je me documente sur le trading et J'apprends également à jouer aux échecs."
+      "par1":"J'ai étudié les systèmes informatiques et les logiciels, puis j'ai plongé directement dans le monde de la programmation—et j'ai adoré depuis le début (enfin, à part quelques batailles de bugs et urgences de collations). J'ai commencé par du codage basique, mais j'ai rapidement voulu tout apprendre, alors je me suis lancé dans la maîtrise du développement full-stack. Pourquoi choisir une spécialité quand apprendre davantage est si amusant ?",
+      "par2":"Résoudre des problèmes est honnêtement ma chose préférée ; il y a quelque chose de formidable à finalement corriger un bug difficile ou faire fonctionner quelque chose parfaitement. Je suis toujours curieux et j'adore essayer de nouvelles technologies—même si cela signifie poursuivre les dernières tendances comme mon code poursuit les virgules manquantes.",
+      "par3":"Quand je ne plonge pas dans le code, vous me trouverez en train de plonger dans l'eau, faire du camping, ou voyager—généralement à la recherche d'un bon Wi-Fi et d'un peu d'aventure. Mon objectif est de devenir un multispécialiste—un peu comme un couteau suisse, mais pour le logiciel.",
+      "par4":"En ce moment, je recherche un poste de développeur à temps plein où je peux apporter beaucoup de code, de créativité et un sens de l'humour à l'équipe."
     },
     "education": {
       "main": "Mon éducation",
       "items": [
         {
-          "title": "baccalauréat en informatique",
+          "title": "Diplôme de baccalauréat",
           "location": "Collège Bach Hamba, Bizerte",
-          "description": "J'ai obtenu mon baccalauréat en informatique",
-          "date": " 2017",
+          "description": "J'ai obtenu un baccalauréat en informatique.",
+          "date": "2017",
           "icon": "LuGraduationCap"
         },
         {
           "title": "Diplôme en informatique",
           "location": "Université de Carthage, ISSAT Mateur",
-          "description": "J'ai obtenu mon diplôme après 3 ans d'études. Ensuite, j'ai travaillé en freelance pendant un an.",
-          "date": " 2020",
+          "description": "J'ai obtenu mon diplôme après 3 ans d'études. Ensuite, j'ai essayé le freelance.",
+          "date": "2020",
           "icon": "PiCertificateBold"
         },
         {
-          "title": "Diplôme en génie logiciel",
+          "title": "Diplôme d'ingénieur logiciel",
           "location": "Polytech Intl, Rue du Lac d'Annecy Tunis",
-          "description": "Actuellement en cours d'obtention d'un diplôme d'ingénieurie en génie logiciel, en travaillant sur des projets annexes pour améliorer mes compétences.",
-          "date": " 2021 - Présent",
+          "description": "J'ai obtenu mon diplôme d'ingénieur logiciel.",
+          "date": "2021 - 2025",
           "icon": "PiStudent"
         }
       ]
@@ -52,10 +48,24 @@
       "main": "Mon Expérience",
       "items": [
         {
-          "title": "Stage PFE",
-          "location": "BFI Groupe, Lac Tunis",
-          "description": "J'ai travaillé sur une plateforme de marketing numérique pendant 6 mois avec Angular, Spring Boot et Power BI. À partir de là, j'ai développé mes compétences en full stack.",
-          "date": "01/01/2020 - 30/06/2020",
+          "title": "Ingénieur Fullstack",
+          "location": "Growth Fusion - Ecoline, Bizerte",
+          "description": "Ingénieur fullstack développant des applications cross-platform sur web, iOS et Android. Direction du développement avec React pour le frontend web, React Native Expo pour mobile et Laravel pour les services backend, assurant une expérience utilisateur fluide sur toutes les plateformes.",
+          "date": "10/2024 - Présent",
+          "icon": "CgWorkAlt"
+        },
+        {
+          "title": "Développeur Fullstack - Chef d'équipe",
+          "location": "3S Spring Services & Solutions, Ariana",
+          "description": "Direction d'une équipe de 2 développeurs pour la création d'une plateforme web complète de gestion de stages. Gestion du développement full-stack de la conception de base de données à l'implémentation frontend, coordination des efforts d'équipe et respect des jalons de livraison.",
+          "date": "02/2024 - 08/2024",
+          "icon": "CgWorkAlt"
+        },
+        {
+          "title": "Développeur Frontend",
+          "location": "Red-Diamond",
+          "description": "Rôle de développeur Front End indépendant, a participé au développement d'un système de gestion pour une société de production de labels musicaux.",
+          "date": "12/2023 - 04/2024",
           "icon": "CgWorkAlt"
         },
         {
@@ -66,10 +76,10 @@
           "icon": "CgWorkAlt"
         },
         {
-          "title": "Développeur Frontend",
-          "location": "Red-Diamond",
-          "description": "Rôle de développeur Front End indépendant, a participé au développement d'un système de gestion pour une société de production de labels musicaux.",
-          "date": "12/2023 - 04/2024",
+          "title": "Stage PFE",
+          "location": "BFI Groupe, Lac Tunis",
+          "description": "J'ai travaillé sur une plateforme de marketing numérique pendant 6 mois avec Angular, Spring Boot et Power BI. À partir de là, j'ai développé mes compétences en full stack.",
+          "date": "01/01/2020 - 30/06/2020",
           "icon": "CgWorkAlt"
         }
       ]
@@ -78,34 +88,323 @@
 
     "projects": {
       "main": "Mes Projets",
+      "backToProjects": "Retour aux projets",
+      "projectType": "APPLICATION WEB FULL-STACK",
+      "techStack": "Technologies Utilisées",
+      "screenshots": "Captures d'écran du projet",
+      "demoVideo": "Voir la démo",
+      "projectDetails": "Détails du Projet",
+      "features": "Fonctionnalités",
+      "developmentProcess": "Processus de Développement",
+      "livePreviewSoon": "Le projet en ligne arrive bientôt",
       "items": [
         {
+          "id": "ecoline-mobile",
+          "title": "Ecoline Mobile",
+          "description": "Client mobile pour le backend Ecoline développé avec Expo React Native. Intègre le streaming vidéo avec expo-video, un système de paiement sécurisé et de gestion d'abonnements, une fonctionnalité de chat alimenté par l'IA, et un suivi complet des progrès.",
+          "tags": ["React Native", "Expo", "expo-video", "Chat IA", "Suivi des Progrès"],
+          "imageUrl": "ecolinemobile",
+          "imageAlt": "Image pour Ecoline Mobile",
+          "screenshots": [
+            "/projects/ecolinemobile/screenshot1.jpg",
+            "/projects/ecolinemobile/screenshot2.jpg"
+          ],
+          "videoDemo": "/projects/ecolinemobile/demo.mp4",
+          "features": [
+            "Streaming vidéo avec intégration expo-video",
+            "Traitement de paiement sécurisé et abonnements",
+            "Fonctionnalité de chat alimenté par l'IA",
+            "Suivi complet des progrès",
+            "Compatibilité mobile multiplateforme"
+          ],
+          "development": [
+            "Développé avec Expo React Native pour le développement multiplateforme",
+            "Intégration d'expo-video pour un streaming vidéo fluide",
+            "Implémentation de Stripe pour le traitement sécurisé des paiements",
+            "Ajout de fonctionnalité de chat IA pour l'assistance utilisateur",
+            "Développement d'un système de suivi des progrès pour l'engagement utilisateur"
+          ]
+        },
+        {
+          "id": "ecoline-web",
+          "title": "Ecoline Web",
+          "description": "Plateforme de streaming vidéo sécurisée avec backend Laravel incluant authentification OAuth et intégration Mux. Client React.js haute performance avec styling SCSS et TanStack Query, atteignant un score PageSpeed Insights de 92% et amélioration de l'engagement utilisateur.",
+          "tags": ["Laravel", "OAuth", "Mux", "React.js", "SCSS", "TanStack Query", "Vercel", "GitHub Actions"],
+          "imageUrl": "ecolineweb",
+          "imageAlt": "Image pour Ecoline Web",
+          "screenshots": [
+            "/projects/ecolineweb/screenshot1.jpg",
+            "/projects/ecolineweb/screenshot2.jpg"
+          ],
+          "videoDemo": "/projects/ecolineweb/demo.mp4",
+          "features": [
+            "Backend de streaming vidéo sécurisé avec Laravel et Mux",
+            "Client React.js haute performance sur Vercel",
+            "Score PageSpeed Insights de 92%",
+            "Durée de session augmentée de 25%",
+            "Pipelines CI/CD avec GitHub Actions"
+          ],
+          "development": [
+            "Backend sécurisé avec Laravel et Mux",
+            "Frontend React.js déployé sur Vercel",
+            "Optimisation des performances avec lazy loading et imports dynamiques",
+            "Automatisation CI/CD avec GitHub Actions"
+          ]
+        },
+        {
+          "id": "3s-internships",
+          "title": "3S-Internships",
+          "description": "Système de gestion de stages avec Node.js/Express/Prisma pour le backend et React/Tailwind/Zustand pour le frontend. Comprend une authentification sécurisée, un outil Kanban interactif de gestion de projet, un calendrier multi-espaces et une fonctionnalité de chat vidéo en temps réel entre l'équipe et les stagiaires/candidats.",
+          "tags": ["React", "Tailwind CSS", "Node.js", "Express", "Prisma", "Zustand"],
+          "imageUrl": "threesmockup",
+          "imageAlt": "Image pour 3S-Internships",
+          "screenshots": [
+            "/projects/3sinternships/screenshot1.jpg",
+            "/projects/3sinternships/screenshot2.jpg"
+          ],
+          "videoDemo": "/projects/3sinternships/demo.mp4",
+          "features": [
+            "UI mobile-responsive avec React et Tailwind CSS",
+            "Backend avec Node.js, Prisma ORM et MySQL",
+            "Authentification sécurisée pour 1 000+ utilisateurs",
+            "Outil Kanban de gestion de projet",
+            "Calendrier multi-espaces et visioconférence en temps réel"
+          ],
+          "development": [
+            "Traduction Figma vers React/Tailwind UI",
+            "Développement backend avec Node.js/Prisma/MySQL",
+            "Implémentation du Kanban, calendrier et visioconférence",
+            "Améliorations CI/CD et revues de code"
+          ]
+        },
+      
+        {
+          "id": "reddiamond-backstage",
+          "title": "RedDiamond Backstage",
+          "description": "Plateforme modulaire de gestion de label musical permettant l'intégration de 20+ artistes et gestionnaires de contenu. Tableaux de bord interactifs avec analytique en temps réel sur les performances, écoutes et revenus des artistes, augmentant l'utilisation quotidienne de 30%.",
+          "tags": ["React", "SCSS", "Chart.js", "Zustand", "TanStack Query"],
+          "imageUrl": "reddiamond",
+          "imageAlt": "Image pour RedDiamond Backstage",
+          "screenshots": [
+            "/projects/reddiamondbackstage/screenshot1.jpg",
+            "/projects/reddiamondbackstage/screenshot2.jpg"
+          ],
+          "videoDemo": "/projects/reddiamondbackstage/demo.mp4",
+          "features": [
+            "Front-end modulaire pour gestion de label musical",
+            "Tableaux de bord interactifs avec Chart.js",
+            "Analytique en temps réel sur la performance des artistes",
+            "Augmentation de 30% de l'utilisation quotidienne"
+          ],
+          "development": [
+            "Développement du front-end modulaire en React.js",
+            "Intégration de Chart.js pour l'analytique",
+            "Optimisation des performances et de l'ergonomie"
+          ]
+        },
+          {
+          "id": "reddiamond-accounting",
+          "title": "Reddiamond Accounting ",
+          "description": "Plateforme complète de gestion financière pour la génération, modification et analyse de factures. Conçu des workflows comptables automatisés qui ont réduit les erreurs de saisie manuelle de 40% et rationalisé les opérations financières pour une efficacité commerciale améliorée.",
+          "tags": ["React.js", "SCSS", "Chart.js", "reactPdf", "TanStack Query"],
+          "imageUrl": "redaccounting",
+          "imageAlt": "Image pour Reddiamond Accounting",
+          "screenshots": [
+            "/projects/reddiamondaccounting/screenshot1.jpg",
+            "/projects/reddiamondaccounting/screenshot2.jpg"
+          ],
+          "videoDemo": "/projects/reddiamondaccounting/demo.mp4",
+          "features": [
+            "Système de gestion de rendez-vous avec Angular et Spring Boot",
+            "Calendrier interactif avec notifications en temps réel",
+            "Plateforme marketing avec suivi de campagnes",
+            "Analyse de performance via Power BI"
+          ],
+          "development": [
+            "Conception et déploiement du système de rendez-vous",
+            "Intégration du calendrier interactif et notifications",
+            "Développement de la plateforme marketing avec analytics"
+          ]
+        },
+        {
+          "id": "university-management",
           "title": "Système de gestion universitaire",
           "description": "Système de gestion universitaire avec une architecture EJB, modèle DAO, avec trois interfaces utilisateur pour les administrateurs, les enseignants et les étudiants.",
           "tags": ["JavaEE", "Servlet 3.0", "MySQL", "EJB", "Bootstrap 4"],
           "imageUrl": "unimanagementImg",
-          "imageAlt": "Image pour le Système de gestion universitaire"
+          "imageAlt": "Image pour le Système de gestion universitaire",
+          "screenshots": [
+            "/projects/university/screenshot1.jpg",
+            "/projects/university/screenshot2.jpg",
+            "/projects/university/screenshot3.jpg",
+            "/projects/university/dashboard.jpg",
+            "/projects/university/admin-panel.jpg"
+          ],
+          "videoDemo": "/projects/university/demo.mp4",
+          "features": [
+            "Contrôle d'accès basé sur les rôles",
+            "Système de gestion des cours",
+            "Suivi des inscriptions des étudiants",
+            "Interface de gestion des notes",
+            "Tableau de bord administratif"
+          ],
+          "development": [
+            "Collecte des exigences auprès des parties prenantes éducatives",
+            "Conception du schéma de base de données avec MySQL",
+            "Implémentation de l'architecture EJB pour la logique métier",
+            "Création d'une interface utilisateur responsive avec Bootstrap",
+            "Tests rigoureux dans des environnements simulés"
+          ]
         },
         {
+          "id": "digital-banking-platform",
           "title": "Plateforme numérique dans le secteur bancaire",
           "description": "Plateforme de marketing numérique pour les clients bancaires, avec des suggestions de produits et de cartes aux clients en fonction de leurs activités.",
           "tags": ["Angular", "Java", "SpringBoot", "PowerBI", "Angular-Material"],
           "imageUrl": "bfi",
-          "imageAlt": "Image pour la Plateforme numérique dans le secteur bancaire"
+          "imageAlt": "Image pour la Plateforme numérique dans le secteur bancaire",
+          "screenshots": [
+            "/projects/banking/dashboard.jpg",
+            "/projects/banking/analytics.jpg",
+            "/projects/banking/customer-view.jpg",
+            "/projects/banking/marketing-tools.jpg",
+            "/projects/banking/reports.jpg"
+          ],
+          "videoDemo": "/projects/banking/product-demo.mp4",
+          "features": [
+            "Recommandations de produits personnalisées",
+            "Tableau de bord de suivi des activités des clients",
+            "Visualisations de données interactives avec PowerBI",
+            "Système d'authentification sécurisé",
+            "Gestion des campagnes marketing"
+          ],
+          "development": [
+            "Collaboration avec des professionnels bancaires pour les exigences",
+            "Conception d'une architecture de microservices avec Spring Boot",
+            "Implémentation d'une interface utilisateur responsive avec Angular Material",
+            "Intégration de PowerBI pour la visualisation des données",
+            "Réalisation de tests utilisateurs avec les parties prenantes"
+          ]
         },
         {
+          "id": "appointmentease-backend",
           "title": "AppointmentEase Backend",
           "description": "Un système de gestion des rendez-vous sécurisé, facilitant les rendez-vous médecin et patients avec des notifications et des calendriers.",
           "tags": ["Java", "Spring-Boot", "Spring-Security", "Mailtrap"],
           "imageUrl": "aptease",
-          "imageAlt": "Image pour AppointmentEase Backend"
+          "imageAlt": "Image pour AppointmentEase Backend",
+          "screenshots": [
+            "/projects/appointmentease/api-docs.jpg",
+            "/projects/appointmentease/database-schema.jpg",
+            "/projects/appointmentease/security-flow.jpg",
+            "/projects/appointmentease/email-template.jpg",
+            "/projects/appointmentease/architecture.jpg"
+          ],
+          "videoDemo": "/projects/appointmentease/backend-demo.mp4",
+          "features": [
+            "Planification sécurisée des rendez-vous",
+            "Système de notification en temps réel",
+            "Intégrations de calendrier",
+            "Authentification et autorisation des utilisateurs",
+            "Gestion des dossiers médicaux"
+          ],
+          "development": [
+            "Conception d'une architecture API RESTful",
+            "Implémentation d'une authentification sécurisée avec Spring Security",
+            "Création d'un système de notification par email avec Mailtrap",
+            "Optimisation des requêtes de base de données pour les performances",
+            "Déploiement sur une infrastructure cloud"
+          ]
         },
         {
+          "id": "appointmentease-frontend",
           "title": "AppointmentEase Frontend",
           "description": "Un client Front-end pour le système de gestion des rendez-vous réalisé avec Angular 15.",
           "tags": ["Angular", "Angular-Material", "RxJs" ,"Angular-Calendar"],
           "imageUrl": "aptease",
-          "imageAlt": "Image pour AppointmentEase Frontend"
+          "imageAlt": "Image pour AppointmentEase Frontend",
+          "screenshots": [
+            "/projects/appointmentease/login.jpg",
+            "/projects/appointmentease/dashboard.jpg",
+            "/projects/appointmentease/calendar-view.jpg",
+            "/projects/appointmentease/appointment-form.jpg",
+            "/projects/appointmentease/notification-center.jpg"
+          ],
+          "videoDemo": "/projects/appointmentease/frontend-demo.mp4",
+          "features": [
+            "Interface de calendrier interactive",
+            "Design responsive pour tous les appareils",
+            "Mises à jour en temps réel avec RxJs",
+            "Planification intuitive des rendez-vous",
+            "Tableau de bord utilisateur complet"
+          ],
+          "development": [
+            "Création de wireframes et designs UI/UX",
+            "Implémentation de composants responsives avec Angular Material",
+            "Utilisation de RxJs pour la gestion d'état réactive",
+            "Intégration avec l'API backend",
+            "Optimisation pour les performances et l'accessibilité"
+          ]
+        },
+        {
+          "id": "music-label-management",
+          "title": "RedDiamond Backstage",
+          "description": "Rôle de développeur Front End, participation au développement d'un système de gestion pour une société de production de labels musicaux.",
+          "tags": ["React", "SCSS", "Chartjs", "Zustand", "ReactQuery"],
+          "imageUrl": "reddiamond",
+          "imageAlt": "Image pour RedDiamond Backstage",
+          "screenshots": [
+            "/projects/music-label/dashboard.jpg",
+            "/projects/music-label/artist-management.jpg",
+            "/projects/music-label/analytics.jpg",
+            "/projects/music-label/release-calendar.jpg",
+            "/projects/music-label/royalty-tracking.jpg"
+          ],
+          "videoDemo": "/projects/music-label/dashboard-demo.mp4",
+          "features": [
+            "Gestion de portfolio d'artistes",
+            "Planification et suivi des sorties",
+            "Analyse des revenus avec Chart.js",
+            "Système de gestion des contrats",
+            "Intégration des canaux de distribution"
+          ],
+          "development": [
+            "Collaboration avec des professionnels de l'industrie musicale",
+            "Implémentation de la gestion d'état avec Zustand",
+            "Création d'une interface utilisateur responsive avec SCSS",
+            "Construction de visualisations de données interactives avec Chart.js",
+            "Optimisation des performances avec les meilleures pratiques React"
+          ]
+        },
+        {
+          "id": "modern-ecommerce",
+          "title": "Application E-Commerce Moderne",
+          "description": "Application e-commerce Next.js, avec animations Framer Motion et design UI/UX moderne",
+          "tags": ["NextJs", "TailwindCSS", "Framer-Motion", "Zustand", "Stripe", "Strapi"],
+          "imageUrl": "ecommerce",
+          "imageAlt": "Image pour Application E-Commerce Moderne",
+          "screenshots": [
+            "/projects/ecommerce/homepage.jpg",
+            "/projects/ecommerce/product-listing.jpg",
+            "/projects/ecommerce/product-detail.jpg",
+            "/projects/ecommerce/shopping-cart.jpg",
+            "/projects/ecommerce/checkout.jpg"
+          ],
+          "videoDemo": "/projects/ecommerce/shopping-experience.mp4",
+          "features": [
+            "Transitions de produits animées avec Framer Motion",
+            "Design responsive pour tous les appareils",
+            "Traitement sécurisé des paiements avec Stripe",
+            "Gestion de contenu avec Strapi CMS",
+            "Gestion d'état avec Zustand"
+          ],
+          "development": [
+            "Conception UI/UX moderne avec TailwindCSS",
+            "Implémentation du rendu côté serveur avec Next.js",
+            "Création d'animations fluides avec Framer Motion",
+            "Intégration du traitement des paiements avec Stripe",
+            "Construction d'un système de gestion de contenu avec Strapi"
+          ]
         }
       ]
     },
